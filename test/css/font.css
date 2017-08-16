@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Exo-Thin"; /* Имя шрифта */
+    src: url(../fonts/Exo-Thin.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: "Exo-Regular"; /* Имя шрифта */
+    src: url(../fonts/Exo-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: "Exo-Medium"; /* Имя шрифта */
+    src: url(../fonts/Exo-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: "Exo-regular-italic"; /* Имя шрифта */
+    src: url(../fonts/exo-regular-italic.otf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: "Lato-Regular"; /* Имя шрифта */
+    src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
