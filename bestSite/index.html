@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BestSite</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header -->
+	<header class="header">
+       <div class="container">
+            <div class="header_wrapp">
+                <div class="lang header_ico"><a href="" class="active">РУС</a> / <a href="">EN</a></div>
+                <div class="header_mail_phone">
+                    <div class="mail header_ico"><a href="mailto:info@bestsite.kiev.ua">info@bestsite.kiev.ua</a></div>
+                    <div class="phone header_ico"><a href="tel:380630322593">38 (050) 032-25-93</a></div>
+                </div>
+                <div id="header_menu" class="header_menu">
+                    <span>Меню</span> 
+                    <div class="header_menu_items"> 
+                        <ul class="nav menu">
+                            <li class="menu_item"><a href="index.html">Главная</a></li>
+                            <li class="menu_item"><a href="">О компании</a></li>
+                            <li class="menu_item"><a href="">Портфолио</a></li>
+                            <li class="menu_item"><a href="">Услуги</a></li>
+                            <li class="menu_item"><a href="">Отзывы</a></li>
+                            <li class="menu_item"><a href="">Блог</a></li>
+                            <li class="menu_item"><a href="">Контакты</a></li>
+                            <li class="menu_item"><a href="">Юмор</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </div>
+	</header>
+	
+    <!-- slider -->
+    <div class="slider">
+        <div class="main_block image1">
+            <div class="main_block_content">
+                <div class="container">
+                <div class="phone header_ico"><a href="tel:380630322593">38 (063) 032-25-93</a></div>
+                    <div class="main_block_wrapp">
+                        <a href="#work" class="headerarrow">
+                            <span class="line"><span class="line_i"></span></span>
+                        </a>
+                       <div class="socialmedia">
+                            <span> <a target="_blank" href="">Fb</a></span>
+                            <span> <a target="_blank" href="">Vk</a></span>
+                            <span> <a target="_blank" href="">In</a></span>
+                            <span> <a target="_blank" href="">Od</a></span>
+                        </div>
+                    </div>
+                    <div class="center_slider">
+                       <div class="center_item">
+                            <div class="center_block">
+                                <div class="big_logo"><div class="logo_wrapp">BestSite</div></div>
+                                <div class="line"><div class="line_wrapp">Веб-студия</div></div>
+                                <div class="subtext">ЭФФЕКТИНЫЕ Web-РЕШЕНИЯ</div>
+                                <div class="line"><div class="line_wrapp">2011-2017</div></div>
+                                <div class="center_nav">
+                                    <a href="">Разработка Сайтов</a>
+                                    <span class="point"></span>
+                                    <a href="">Продвижение Сайтов в Google/Яндекс</a>
+                                    <span class="point"></span>
+                                    <a href="">Комплексный Маркетинг</a>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="center_item">
+                            <div class="center_block">
+                                <div class="big_logo"><div class="logo_wrapp">BestSite</div></div>
+                                <div class="line"><div class="line_wrapp">Веб-студия</div></div>
+                                <div class="subtext">ЭФФЕКТИНЫЕ Web-РЕШЕНИЯ</div>
+                                <div class="line"><div class="line_wrapp">2012-2016</div></div>
+                                <div class="center_nav">
+                                    <a href="">Разработка Сайтов</a>
+                                    <span class="point"></span>
+                                    <a href="">Продвижение Сайтов в Google/Яндекс</a>
+                                    <span class="point"></span>
+                                    <a href="">Комплексный Маркетинг</a>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="center_item">
+                            <div class="center_block">
+                                <div class="big_logo"><div class="logo_wrapp">BestSite</div></div>
+                                <div class="line"><div class="line_wrapp">Веб-студия</div></div>
+                                <div class="subtext">ЭФФЕКТИНЫЕ Web-РЕШЕНИЯ</div>
+                                <div class="line"><div class="line_wrapp">2012-2016</div></div>
+                                <div class="center_nav">
+                                    <a href="">Разработка Сайтов</a>
+                                    <span class="point"></span>
+                                    <a href="">Продвижение Сайтов в Google/Яндекс</a>
+                                    <span class="point"></span>
+                                    <a href="">Комплексный Маркетинг</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="musicbox">
+                    <div id="mp3_player">
+                        <div id="audio_box">
+                            <audio preload="auto" src="" controls="" loop="" autoplay=""></audio>
+                        </div>
+                        <canvas id="analyser_render" width="19" height="16"></canvas>
+                        <div id="playbtn" class="paused"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- work -->
+    <div class="work content" id="work">
+        <div class="container">
+            <div class="zvenya center">
+                <div class="zvenya_big"></div>
+                <div class="zvenya_small"></div>
+            </div>
+            <h3><span class="pink">Что</span> <small>мы</small> делаем<span class="vopros">?</span></h3>
+            <div class="work_list clearfix">
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-1.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Анализ</span> <span class="up pink">РЫНКА</span> <br>Клиента</div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ Спроса на Товары/Услуги</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ ЦА <small>(Целевой Аудитории)</small></div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ Уровня Конкуренции</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ Главных Конкурентов</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-2.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Разработка</span> <span class="up pink">Стратегии</span> <br><span class="up">Достижения</span> Целей</div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Определение Главной Цели Клиента <small>(Обема продаж, клиенты, промо..)</small></div></div>
+                            <div class="work_sm_item"><div class="item_wrapp"><small>Построение</small> Этапов достижения Цели</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp"><small>Прогноз</small> Бюжета, Рентабельности <small>и</small> Окупаемости Стратегии</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp"><small>Выбор</small> Структуры Сайта, Каналов Рекламы</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp"><small>Выбор</small> Инструментов Масштабирования</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-3.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Построение</span> <span class="up pink">Структуры</span> Сайта <small>и</small> <span class="green">Разработка</span></div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Сайт-Визитка</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Лендинг-Пейдж <small>(Landing)</small></div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Сайт-Портфолио</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Интернет-Магазин</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Информационый Портал</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Сайт Компании</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Другие решения</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-4.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Раскрутка</span> <span class="up pink">САЙТА</span> <br> <small>в</small> Интернете</div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Продвижение Google/Яндекс <small>(SEO)</small></div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Контекстная реклама Google/Яндекс</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Социальные сети</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Медиа-маркетинг</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-5.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Аудит</span> <span class="up pink">Посещаемости</span> <br> <small>и</small> <span class="up pink">Продаж</span> Сайта</div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Посещаемость сайта «До» и «После»</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ показателей Google/Яндекс</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Анализ Обьема Продаж</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Комплексный Анализ</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="work_item_wrapp">
+                        <div class="work_ico img_contain"><img src="images/work-6.png" alt=""></div>
+                        <div class="work_title"><i></i><span class="green">Поддержка</span> <span class="up pink">Сайта</span> <br> <small>и</small><span class="green"> Масштабирование</span> Продаж</div>
+                        <div class="work_small_list">
+                            <div class="work_sm_item"><div class="item_wrapp">Наполнение  сайта Контентом</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Проведение A/B-тестирования</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Учеличение Конверсии Сайта</div></div>
+                            <div class="work_sm_item"><div class="item_wrapp">Увеличения Конверсии Рекламы</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- example -->
+    <div class="example content">
+        <div class="container">
+            <h3><span class="up">ПРИМЕРЫ</span> НАШИХ <span class="pink"><span>Р</span>АБОТ</span></h3>
+            <div class="view_chouse">
+                <div class="view_item view_slider active" data-tab="view" data-target=".slider"><i class="example-ico ico-slider"></i></div>
+                <div class="view_item view_grid" data-tab="view" data-target=".grid"><i class="example-ico ico-grid"></i></div>
+                <div class="view_item view_video" data-tab="view" data-target=".video" style="display:none"><i class="example-ico ico-video"></i></div>
+            </div>
+        </div>
+        <div class="example_list">
+            <div class="example_slider slider active" data-tab="view">
+                <div class="container">
+                    <div id="carousel-1" class="example_slider">
+                       <a href="images/portfolio/bellavita.kiev.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/chaihona-kiev.com.ua.png" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/freedomauto.com.ua.png" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/la-lavanda.com.png" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/lkafa.com.png" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/mrpepe.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                       <a href="images/portfolio/puzzlepizza.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                        <a href="images/portfolio/zayats.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                        <a href="images/portfolio/zayats.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                        <a href="images/portfolio/zayats.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                        <a href="images/portfolio/zayats.com.ua.jpg" data-fancybox="grid-1">
+                            <img src="images/slider-item.png" alt="Image 1"/>
+                       </a>
+                    </div>
+                    <a href="#" id="prev" class="example_arrow example_arrow-prev">Prev</a><a href="#" id="next" class="example_arrow example_arrow-next">Next</a>
+                </div>
+            </div>
+            <div class="example_grid grid" data-tab="view">
+                <div class="container-fluid">
+                    <div class="grid_list clearfix">
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-1">Site Name 1</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-1"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-1"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-2">Site Name 2</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-2"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-2"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-3">Site Name 3</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-3"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-3"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-4">Site Name 4</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-4"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-4"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-5">Site Name 5</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-5"></a>
+                                <a href="images/-bg.png" data-fancybox="grid-5"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-6">Site Name 6</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-6"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-6"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-7">Site Name 7</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-7"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-7"></a>
+                            </div>
+                        </div>
+                        <div class="grid_item img_cover">
+                            <img src="images/slider-item.png" alt="">
+                            <a href="images/slider-item.png" data-fancybox="grid-8">Site Name 8</a>
+                            <div class="hidden">
+                                <a href="images/main.bg.jpg" data-fancybox="grid-8"></a>
+                                <a href="images/review_bg.jpg" data-fancybox="grid-8"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example_video video" data-tab="view">
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+        <div class="examle_text">
+            <div class="container">
+                <p>Для достижения поставленной Цели в создании Сайта наша команда отдается с душой.. <br>Мы дорожим репутацией и стараемся делать работу так, чтобы нас рекомендова коллегам)</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- zayavka -->
+    <div class="zayavka image1 content">
+        <div class="container">
+            <h4><small>ЕСТЬ</small> ВОПРОСЫ?</h4>
+            <div class="subtitle"><small><span>О</span>ТПРАВЬТЕ</small> ЗАЯВКУ <small>НА</small> ЗВОНОК..</div>
+            <form action="" class="zayavka_form">
+                <input type="text" class="zayavkaIpt phone" placeholder="Ваш Телефон..">
+                <input type="submit" class="zayavkaSbt" value="отправить">
+            </form>
+        </div>
+    </div>
+    
+    <!-- result -->
+    <div class="result content">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="result_sub_title center">Нам доверяют за любовь к делу..</div>
+            <div class="result_title center"><span class="title_line"><span class="pink up">наши</span> результаты</span></div>
+            <div class="result_list clearfix">
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>148</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Созданных веб-сайтов<br> для бизнеса</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Сайты-Визитки</div>
+                                <div class="result_text_item">Лендинг-Пейдж</div>
+                                <div class="result_text_item">Интернет-магазины</div>
+                                <div class="result_text_item">Новостные порталы</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>6</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Лет на рынке<br> Украины</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Изучение веб-технологий</div>
+                                <div class="result_text_item">Опыт работы с разным масштабом компаний</div>
+                                <div class="result_text_item">Знание специфики рынков</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>12</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Компаний, продвинутых <br>в ТОП 10 Google/Яндекс</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Пиццерии</div>
+                                <div class="result_text_item">Салоны красоты</div>
+                                <div class="result_text_item">Риелоры Радио-станций</div>
+                                <div class="result_text_item">Транспортные компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>4</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Международных<br> проекта</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Азербайджан. Магазин Шын и Дисков</div>
+                                <div class="result_text_item">Чикаго. Сайт Консалтинговой компании</div>
+                                <div class="result_text_item">Казахстан. Сайт Мед. клиники</div>
+                                <div class="result_text_item">Турция. Сайт Транспортных услуг</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>16</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Сайтов на<br> Поддержке</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Обновление Новостей</div>
+                                <div class="result_text_item">Добавление Афиш</div>
+                                <div class="result_text_item">Обновление Акций</div>
+                                <div class="result_text_item">Прочий контент</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_item">
+                    <div class="result_item_wrapp">
+                        <div class="result_number_wrapp">
+                            <div class="result_number"><small>+</small>12</div>
+                        </div>
+                        <div class="result_text">
+                            <div class="result_header">Компаний, продвинутых <br>в ТОП 10 Google/Яндекс</div>
+                            <div class="result_text_list">
+                                <div class="result_text_item">Пиццерии</div>
+                                <div class="result_text_item">Салоны красоты</div>
+                                <div class="result_text_item">Риелоры Радио-станций</div>
+                                <div class="result_text_item">Транспортные компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- price -->
+    <div class="price content">
+        <div class="container">
+            <h3><span class="up">Цены</span> <small>на</small> работы</h3>
+            <div class="price_list">
+                <div class="price_item">
+                    <div class="price_left">
+                        <div class="price_name"><span>Лендинг</span>-пейдж</div>
+                        <div class="price_subtitle">одностраничный сайт</div>
+                    </div>
+                    <div class="price_right">
+                        <div class="price_cena"><span>10 000</span> грн</div>
+                        <div class="price_subcena">и выше</div>
+                    </div>
+                </div>
+                <div class="price_item">
+                    <div class="price_left">
+                        <div class="price_name"><span>Лендинг</span>-пейдж</div>
+                        <div class="price_subtitle">одностраничный сайт</div>
+                    </div>
+                    <div class="price_right">
+                        <div class="price_cena"><span>10 000</span> грн</div>
+                        <div class="price_subcena">и выше</div>
+                    </div>
+                </div>
+                <div class="price_item">
+                    <div class="price_left">
+                        <div class="price_name"><span>Лендинг</span>-пейдж</div>
+                        <div class="price_subtitle">одностраничный сайт</div>
+                    </div>
+                    <div class="price_right">
+                        <div class="price_cena"><span>10 000</span> грн</div>
+                        <div class="price_subcena">и выше</div>
+                    </div>
+                </div>
+                <div class="price_item">
+                    <div class="price_left">
+                        <div class="price_name"><span class="green">Лендинг</span>-пейдж</div>
+                        <div class="price_subtitle">одностраничный сайт</div>
+                    </div>
+                    <div class="price_right">
+                        <div class="price_cena"><span>10 000</span> грн</div>
+                        <div class="price_subcena">и выше</div>
+                    </div>
+                </div>
+                <div class="price_item">
+                    <div class="price_left">
+                        <div class="price_name"><span class="green">Лендинг</span>-пейдж</div>
+                        <div class="price_subtitle">одностраничный сайт</div>
+                    </div>
+                    <div class="price_right">
+                        <div class="price_cena"><span>10 000</span> грн</div>
+                        <div class="price_subcena">и выше</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- reason -->
+    <div class="reason content">
+        <div class="container">
+            <div class="reason_wrapp">
+               <h3><span class="pink">Зачем</span> <small><span>мы</span> это</small> <span class="green">делаем</span>?</h3>
+                <div class="zveno2_wrapp">
+                    <div class="zveno2_big"></div>
+                    <div class="zveno2_small"></div>
+                </div>
+                <p>У каждого из нас есть свое <b>Дело Сердца</b>, как и любимое животное, блюдо или музыка..</p>
+                <p>Мы воплощаем <b>Эфективные идеи</b> в Жизнь, помагая малому бизнесу больше продавать товаров, услуг или представлять себя на рынке необходимым образом.</p>
+                <p>В разработке <b>web-проектов</b> мы стараемся отдаваться полностью.. <b>Опыт</b>, <b>Понимание трендов Рекламы</b> и <b>Рынка</b> позволяем нам оправдывать надежды клиентов и завоевывать <b>Репутацию</b>.</p>
+                <div class="reason-line"></div>
+                <p class="center">Мы растем, мы дорожим своей репутацие! Успех возможен там, где есть любовь&nbsp;&nbsp;<img class="sun101" src="images/sun101.png"><br>Спасибо всем, кто с нами!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- review -->
+    <div class="review">
+        <div class="container">
+            <h3><span class="pink up">О нас</span> говорят..</h3>
+            <div class="review_list desctop">
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_list mobile">
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-1.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Полянчич Юлия</div>
+                            <div class="review_link"><a href="http://lkafa.com" target="_blank">http://lkafa.com</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <div class="review_item_wrapp">
+                        <div class="review_avatar img_cover"><img src="images/review-2.jpg" alt=""></div>
+                        <div class="review_text">
+                            <div class="review_name">Реза Гузинкау</div>
+                            <div class="review_link"><a href="http://persianpalace.com.ua" target="_blank">http://persianpalace.com.ua</a></div>
+                            <p>Спасибо большое Компании за столь то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за то-то и то-то.. очень благодарна за это и за то..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- client -->
+    <div class="client content">
+        <div class="container">
+            <h3>Наши <span>Клиенты</span></h3>
+            <div class="client_list">
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+                <div class="client_item img_contain"><img src="images/client.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- map -->
+    <div class="map content">
+        <div class="container">
+            <h3>Мы <small>на</small> <span class="pink up">карте</span></h3>
+            <div class="adress">г. Киев, ул. Вадима Гетьмана, 1</div>
+        </div>
+        <div id="map"></div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="footer_wrapp">
+                    <div class="logo_footer">
+                        <div class="footer_line"><span class="footer_line_wrapp">Веб-Студия</span></div>
+                        <div class="logo"><img src="images/footer_logo.png" alt=""></div>
+                        <div class="sublogo">эффективные web-решения</div>
+                        <div class="slogan">Разработка и  продвижение web-сайтов</div>
+                    </div>
+                    <div class="footer_menu">
+                        <div class="footer_title">Информация</div>
+                        <div class="footer_menu_list">
+                            <div class="footer_menu_item"><a href="">О компании</a></div>
+                            <div class="footer_menu_item"><a href="">Услуги</a></div>
+                            <div class="footer_menu_item"><a href="">Портфолио</a></div>
+                            <div class="footer_menu_item"><a href="">Отзывы</a></div>
+                            <div class="footer_menu_item"><a href="">Контакты</a></div>
+                        </div>
+                    </div>
+                    <div class="footer_soc">
+                        <div class="footer_title">Мы в социальных сетях</div>
+                        <div class="footer_soc_list">
+                            <div class="footer_soc_item"><a href=""><img src="images/vk.png" alt=""></a></div>
+                            <div class="footer_soc_item"><a href=""><img src="images/facebook.png" alt=""></a></div>
+                            <div class="footer_soc_item"><a href=""><img src="images/insta.png" alt=""></a></div>
+                            <div class="footer_soc_item"><a href=""><img src="images/google.png" alt=""></a></div>
+                            <div class="footer_soc_item"><a href=""><img src="images/odnokls.png" alt=""></a></div>
+                        </div>
+                        <div class="podpiska">
+                            <div class="footer_title">заявка на консультацию</div>
+                            <form action="" class="podpiska_form">
+                                <div class="pospiska_wrapp">
+                                    <input type="text" class="podpiska_text phone" placeholder="Введите Телефон..">
+                                    <input type="submit" class="podpiska_sbt" value="Отправить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer_contact">
+                        <div class="footer_title">Наши контакты</div>
+                        <div class="footer_contact_list">
+                            <div class="footer_phone"><a href="tel:38 (050) 254-25-25">38 (050) 254-25-25</a></div>
+                            <div class="footer_phone"><a href="tel:38 (044) 254-25-25">38 (044) 254-25-25</a></div>
+                            <div class="footer_mail2"><a href="mailto:info@bestsite.kiev.ua">info@bestsite.kiev.ua</a></div>
+                            <div class="footer_skype"><a href="tel:bestsite.kiev.ua">bestsite.kiev.ua</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copiright">
+            <div class="container"><span>bestsite.kiev.ua &copy; 2011-2017. Все права защищены</span></div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 15,                     // Set the zoom level manually
+			scrollwheel: false,
+			disableDoubleClickZoom: true,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(50.454797, 30.447056) ,
+            styles: [
+              {
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#f5f5f5"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#f5f5f5"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#bdbdbd"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#eeeeee"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#e5e5e5"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#dadada"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#e5e5e5"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.station",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#eeeeee"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#c9c9c9"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              }
+            ]
+        };
+
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(50.452797, 30.447056),
+            map: map,
+            title: 'г. Киев, ул. Вадима Гетьмана, 1',
+            icon: 'images/map-icon.png' // null = default icon
+        });
+    }
+</script>
+</html>
