@@ -20,13 +20,13 @@
 						<div class="header__top">
 							<div class="header__nav nav">
 								<ul class="nav__list">
-									<li class="nav__item"><a href="">Услуги</a></li>
-									<li class="nav__item active"><a href="">О нас</a></li>
-									<li class="nav__item"><a href="">Наша команда</a></li>
-									<li class="nav__item"><a href="">Расписание</a></li>
-									<li class="nav__item"><a href="">Новости</a></li>
-									<li class="nav__item"><a href="">Клубные карты</a></li>
-									<li class="nav__item"><a href="">Контакти</a></li>
+									<li class="nav__item active"><a href="/service.php">Услуги</a></li>
+									<li class="nav__item"><a href="">О нас</a></li>
+									<li class="nav__item"><a href="/team.php">Наша команда</a></li>
+									<li class="nav__item"><a href="/rozpisanie.php">Расписание</a></li>
+									<li class="nav__item"><a href="/news.php">Новости</a></li>
+									<li class="nav__item"><a href="/cards.php">Клубные карты</a></li>
+									<li class="nav__item"><a href="/contact.php">Контакти</a></li>
 								</ul>
 							</div>
 							<div class="header__lang lang">

@@ -39,11 +39,11 @@
 						<div class="footer__nav nav">
 							<ul class="footer__list">
 								<li class="footer__item"><a href="">О нас</a></li>
-								<li class="footer__item"><a href="">Наша команда</a></li>
-								<li class="footer__item"><a href="">Расписание</a></li>
-								<li class="footer__item"><a href="">Новости</a></li>
-								<li class="footer__item"><a href="">Клубные карты</a></li>
-								<li class="footer__item"><a href="">Контакти</a></li>
+								<li class="footer__item"><a href="/team.php">Наша команда</a></li>
+								<li class="footer__item"><a href="/rozpisanie.php">Расписание</a></li>
+								<li class="footer__item"><a href="/news.php">Новости</a></li>
+								<li class="footer__item"><a href="/cards.php">Клубные карты</a></li>
+								<li class="footer__item"><a href="/contact.php">Контакти</a></li>
 							</ul>
 						</div>
 					</div>
@@ -51,12 +51,12 @@
 						<div class="footer_title">УСЛУГИ</div>
 						<div class="footer__nav nav">
 							<ul class="footer__list">
-								<li class="footer__item"><a href="">Тренажерный зал</a></li>
-								<li class="footer__item"><a href="">Аквазона</a></li>
-								<li class="footer__item"><a href="">Групповой фитнес</a></li>
-								<li class="footer__item"><a href="">Детский клуб</a></li>
-								<li class="footer__item"><a href="">SPA зона</a></li>
-								<li class="footer__item"><a href="">Фитнес бар</a></li>
+								<li class="footer__item"><a href="/service-zal.php">Тренажерный зал</a></li>
+								<li class="footer__item"><a href="/service-aqua.php">Аквазона</a></li>
+								<li class="footer__item"><a href="/service-fitness.php">Групповой фитнес</a></li>
+								<li class="footer__item"><a href="/service-children.php">Детский клуб</a></li>
+								<li class="footer__item"><a href="/service-spa.php">SPA зона</a></li>
+								<li class="footer__item"><a href="/bar.php">Фитнес бар</a></li>
 							</ul>
 						</div>
 					</div>

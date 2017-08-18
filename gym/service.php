@@ -20,37 +20,37 @@
 							<div class="service__ico"><img src="image/gym.svg" alt=""></div>
 							<div class="service__name">Тренажерный зал</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="service-zal.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 						<div class="col-md-4 col-xs-6 service__item center">
 							<div class="service__ico"><img src="image/aquazona.svg" alt=""></div>
 							<div class="service__name">Аквазона</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="service-aqua.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 						<div class="col-md-4 col-xs-6 service__item center">
 							<div class="service__ico"><img src="image/group_fitnes.svg" alt=""></div>
 							<div class="service__name">Групповой фитнес</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="service-fitness.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 						<div class="col-md-4 col-xs-6 service__item center">
 							<div class="service__ico"><img src="image/children.svg" alt=""></div>
 							<div class="service__name">Детский клуб</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="service-children.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 						<div class="col-md-4 col-xs-6 service__item center">
 							<div class="service__ico"><img src="image/spa.svg" alt=""></div>
 							<div class="service__name">SPA зона</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="service-spa.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 						<div class="col-md-4 col-xs-6 service__item center">
 							<div class="service__ico"><img src="image/bar.svg" alt=""></div>
 							<div class="service__name">Фитнес бар</div>
 							<div class="service__describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat risus in risus imperdiet euismod. Mauris posuere bibendum maximus.</div>
-							<div class="service__btn"><a href="" class="btn btn-inverse btn-service">Подробней</a></div>
+							<div class="service__btn"><a href="bar.php" class="btn btn-inverse btn-service">Подробней</a></div>
 						</div>
 					</div>
 				</div>
