@@ -1,0 +1,57 @@
+.footer 
+	background: $main-color
+	padding: 37px 0 20px
+	font-size: 17px
+
+	@media (max-width: $phone)
+		padding-bottom: 15px
+
+	&__logo 
+		padding-top: 3px
+		@media (max-width: $phone)
+			text-align: left
+
+	&__wrapp
+		display: flex
+		justify-content: space-between
+		padding-bottom: 25px
+
+		@media (max-width: $phone)
+			display: block
+			padding-bottom: 20px
+
+	&__item
+		margin-bottom: 5px
+
+		&:last-child 
+			margin-bottom: 0
+
+		a 
+			color: $second-color
+			text-decoration: none
+			position: relative
+
+			@media (max-width: $phone) 
+				font-size: 19px
+
+			&:after
+				position: absolute
+				right: 0
+				left: 0
+				margin: auto
+				width: 0
+				height: 1px
+				background: $second-color
+				display: block
+				content: ''
+				transition: .6s
+
+			&:hover
+				&:after
+					width: 100%
+
+.copyright 
+	border-top: 1px solid $second-color
+	color: $second-color
+	font-size: 17px
+	padding-top: 15px

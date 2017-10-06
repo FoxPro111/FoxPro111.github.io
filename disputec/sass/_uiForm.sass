@@ -1,0 +1,84 @@
+.ui-selectmenu-button.ui-button 
+	text-align: right
+	display: block
+	width: 100%
+	height: 46px
+	font-size: 20px
+	line-height: 22px
+	background: $select-color
+	padding: 10px
+
+	&:after 
+    content: "\f107"
+    position: absolute
+    left: -46px
+    top: 0
+    height: 100%
+    width: 46px
+    // background: $main-color
+    font-size: 30px
+    color: #fff
+    z-index: 5
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-family: $FontAwesome
+
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
+.ui-widget-header .ui-state-focus, 
+.ui-button:hover, 
+.ui-button:focus,
+.ui-selectmenu-button.ui-button 
+	border: 1px solid $main-color
+	border-left-width: 46px
+	outline: none
+	color: $main-color
+
+.ui-button .ui-icon 
+	display: none
+
+.ui-selectmenu-text 
+	margin-right: 0
+
+.ui-button 
+	margin-right: 0
+	border: 0
+	border-radius: 0
+
+.ui-widget.ui-widget-content 
+	border: 1px solid $main-color
+	margin-top: 3px
+	font-size: 20px
+	line-height: 22px
+	padding-bottom: 0
+
+.ui-menu .ui-menu-item-wrapper 
+	padding: 7px 10px 9px
+	border: 0
+	outline: 0
+
+.ui-widget-content .ui-state-active, 
+.ui-button.ui-state-active:hover 
+	background: $main-color
+	color: $second-color
+	border: 0
+	outline: 0
+	margin: 0
+
+.form--aut .ui-selectmenu-button.ui-button
+	border-left-width: 1px
+	border-right-width: 46px
+	padding-left: 40px
+	font-family: $OpenSansHebrew
+	font-weight: 300
+
+	&:after 
+		right: auto
+		left: 0
+		color: $main-color
+		width: 40px

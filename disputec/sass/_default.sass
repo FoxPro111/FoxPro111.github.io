@@ -1,0 +1,71 @@
+%clear
+	display: block
+	content: ''
+	clear: both
+
+input 
+	margin: 0
+	appearance: none
+
+img 
+	max-width: 100%
+	height: auto
+
+.clearfix:after,
+.clearfix:before,
+.row:after,
+.row:before  
+	@extend %clear
+
+body,
+html 
+	direction: rtl
+
+body 
+	color: $main-color
+	background: $second-color
+
+p 
+	margin-bottom: 26px
+
+.center 
+	text-align: center
+
+.container 
+	max-width: 100%
+	width: 100%
+	margin:
+		left: auto
+		right: auto
+	padding:
+		left: 15px
+		right: 15px
+	position: relative
+
+	@media (min-width: $small + 1px)
+		width: 750px
+
+	@media (min-width: $medium + 1px)
+		width: 970px
+
+	@media (min-width: $large + 1px)
+		width: 1250px
+
+	&-fluid 
+		width: 100%
+		padding:
+			left: 15px
+			right: 15px
+
+.row 
+	margin: 
+		left: -15px
+		right: -15px
+	
+	> div 
+		padding: 
+			left: 15px
+			right: 15px 
+
+.select__item
+	width: 100%

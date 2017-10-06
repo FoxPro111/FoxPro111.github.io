@@ -1,0 +1,160 @@
+.placeholder
+	background: linear-gradient($main-hover, $main-color)
+	padding: 45px 0 82px
+
+	@media (max-width: $medium)
+		padding: 40px 0 72px
+	
+	&__table__wrapp
+		background: $second-color
+		margin-top: 24px
+		padding-bottom: 53px
+		box-shadow: 0px 0px 7px rgba(0, 0, 0, .6)
+
+	&__select
+		min-width: 252px
+		max-width: 100%
+		display: inline-block
+
+	&__table
+		tr
+			border-bottom: 1px solid $select-color
+
+		td,
+		th 
+			height: 55px
+			vertical-align: middle
+
+		th
+			font-weight: 800
+			font-size: 15.6px
+
+		td 
+			font-size: 14.6px
+
+	.detail
+		text-align: right
+		padding: 0 10px
+
+	.button_col 
+		text-align: center
+		padding-left: 57px
+		width: 225px
+
+	.table_btn 
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		display: inline-flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		font-size: 12px
+		color: $second-color
+		background-color: $main-color
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, .35)
+
+		+ .table_btn
+			margin-right: 16px
+
+		&-load
+			background: $main-hover
+
+	.info,
+	.price
+		text-align: center
+		padding: 0 10px
+
+	.date 
+		text-align: right
+
+	th.date
+		padding-right: 17px
+
+	.checkbox
+		width: 48px
+
+	&--desctop
+		@media (max-width: $small)
+			display: none
+
+	&--mobile
+		display: none
+
+		@media (max-width: $small)
+			display: block
+
+.placeholder
+	&__item
+		background: rgba($second-color, .9)
+		box-shadow: 0px 0px 7px rgba(0, 0, 0, .6)
+		margin-bottom: 44px
+		padding: 15px
+		position: relative
+
+	&__box
+		margin-bottom: 25px
+
+		&:last-child
+			margin-bottom: 0
+
+		&--see
+			margin-top: 25px
+
+			.placeholder__params
+				margin-bottom: 15px
+
+	&__params
+		font-size: 20px
+		font-weight: 800
+		margin-bottom: .5em
+
+		@media (max-width: $phone)
+			font-size: 15.64px
+
+	&__value
+		font-size: 19px
+
+		@media (max-width: $phone)
+			font-size: 14.6px
+
+		&:last-child 
+			margin-bottom: 0
+	
+	@media (max-width: $small)
+		.table_btn 
+			position: absolute
+			bottom: 15px
+			left: 15px
+			width: 45px
+			height: 45px
+			font-size: 17.5px
+
+[data-tooltip] 
+	position: relative
+
+	&::before
+		content: attr(data-tooltip)
+		position: absolute
+		display: block
+		border-radius: 6px
+		padding: 5px 10px
+		font-size: 12.5px
+		left: 50%
+		bottom: 100%
+		white-space: nowrap
+		transform: translate(-50%, -6px)
+		background: rgba($main-color, .9)
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, .34)
+		opacity: 0
+		visibility: hidden
+		transition: .1s
+		cursor: default
+
+		@media (max-width: $small)
+			display: none
+
+	&:hover
+		&::before
+			opacity: 1
+			visibility: visible

@@ -1,0 +1,59 @@
+.btn
+	background: $main-color
+	color: $second-color
+	border: none
+	transition: .5s
+	font-size: 20px
+	line-height: 26px
+	font-family: $OpenSansHebrew
+	font-weight: 800
+	text-transform: uppercase
+	text-align: center
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding: 9px 15px 11px
+	cursor: pointer
+	text-decoration: none
+
+	&:hover 
+		background: $main-hover
+
+	&--grey
+		border: 1px solid $second-color
+		background: rgba(255, 255, 255, .3)
+
+		&:hover
+			background: rgba(255, 255, 255, .3)
+	
+	&--scale
+
+		&:hover
+			transform: scale(1.2)
+
+	&-form 
+		width: 100%	
+
+	&-register
+		width: 335px
+		height: 68px
+		font-size: 25.38px
+
+		@media (max-width: $small)
+			width: 300px
+
+		@media (max-width: $phone)
+			width: 255px
+
+	&-payment
+		width: 100%
+		margin-top: 31px
+		height: 110px
+
+		@media (max-width: $phone)
+			font-size: 18px
+
+.btn__wrapp
+	&--register
+		text-align: center

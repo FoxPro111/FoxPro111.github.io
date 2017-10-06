@@ -1,0 +1,38 @@
+.header 
+	background: url(../image/header-bg.png) repeat-x
+	padding: 17px 0 15px
+
+	@media (max-width: $phone)
+		padding: 13px 0 12px
+
+	&__wrapp
+		display: flex
+		justify-content: space-between
+
+	&__logo 
+		width: 93px
+	
+.aut
+	&__list
+		display: flex
+		align-items: center
+		font-size: 16px
+		padding-top: 12px
+
+	&__item 
+		
+		&:after 
+			content: '|'
+			display: inline-block
+			margin: 0 7px 0 8px
+
+		&:last-child
+			&:after 
+				display: none
+
+		a 
+			text-decoration: none
+			color: $main-color
+
+			&:hover
+				text-decoration: underline

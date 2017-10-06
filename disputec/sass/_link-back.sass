@@ -1,0 +1,76 @@
+.link
+	&__section
+		padding: 84px 0 86px
+
+		@media (max-width: $large)
+			padding: 70px 0
+
+		@media (max-width: $medium)
+			padding: 50px 0
+
+		@media (max-width: $small)
+			padding: 40px 0
+
+		@media (max-width: $phone)
+			padding: 25px 0
+
+	&__list
+		margin: 0 -6px
+		text-align: center
+		font-size: 0
+
+	&__item
+		padding: 0 6px
+		display: inline-block
+
+		@media (max-width: $small)
+			width: 50%
+
+		@media (max-width: $phone)
+			width: 100%
+			margin-bottom: 12px
+
+		a 
+			height: 66px
+			width: 335px
+			display: inline-flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+			border: 1px solid $main-color
+			font-size: 25.38px
+			font-weight: 800
+			color: $main-color
+			text-decoration: none
+			transition: .5s
+
+			@media (min-width: $phone + 1) and (max-width: $small)
+				font-size: 22px
+
+			&:hover
+				background: $select-color
+
+			&.link__top
+				max-width: 275px
+				color: $main-hover
+				border-color: $main-hover
+
+				&:hover
+					color: $main-color
+					border-color: $main-color
+
+			,
+			&.link__top
+				@media (max-width: $small)
+					max-width: 100%
+
+			@media (max-width: $small)
+				width: 100%
+
+			.fa 
+				font-size: 1.56em
+				line-height: .5
+				margin-left: 10px
+				position: relative
+				top: 3px
+

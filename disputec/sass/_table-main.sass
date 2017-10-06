@@ -1,0 +1,186 @@
+.table__wrapp
+	border: 1px solid $main-color
+	opacity: .6
+	transition: .5s
+	position: relative
+
+	@media (max-width: $medium)
+		margin-left: -15px
+
+.table-responsive 
+	padding-right: 150px
+	font-size: 19px
+
+	@media (max-width: $medium)
+		font-size: 16.6px
+		padding-right: 130px
+		overflow: auto
+
+.table__head 
+	position: absolute
+	right: 0
+	width: 150px
+	z-index: 2
+
+	@media (max-width: $medium)
+		font-size: 16.6px
+		width: 130px
+
+.table 
+  width: 100%
+
+  &__swipe
+  	display: none
+
+  	@media (max-width: $small)
+  		display: block
+  		text-align: center
+  		font-size: 40px
+  		margin-top: 15px
+
+  	@media (max-width: $phone)
+  		font-size: 30px
+
+  	@media (max-width: $min_phone)
+  		font-size: 20px
+
+.table__wrapp td,
+.table__wrapp th
+  vertical-align: middle
+
+.table__wrapp td span,
+.table__wrapp th span
+	filter: blur(3px)
+	transition: .5s
+
+.table__head th,
+.table__content th 
+	background: $table-color
+	color: $second-color
+	border-left: 1px solid $second-color
+	border-bottom: 1px solid $second-color
+
+.table__head tr
+
+	&:last-child th
+		border-bottom: 0
+
+.table__content tr
+	&:nth-child(2n)
+		td
+			background: $select-color
+
+	&:nth-child(2n+1)
+		td
+			background: $row-color
+
+	td 
+		border-left: 1px solid $second-color
+		border-bottom: 1px solid $second-color
+
+		@media (max-width: $small)
+			min-width: 120px
+
+	&:last-child
+		td 
+			border-bottom: 0
+
+.table__content td,
+.table__content th
+	&:last-child 
+		border-left: 0
+
+.table__head th,
+.table__content td,
+.table__content th
+	height: 55px
+
+	@media (max-width: $medium)
+		height: 50px
+
+.box__nav 
+	position: relative
+	
+	a 
+		font-size: 2em
+		line-height: 1
+		color: #fff
+		position: absolute
+		top: .2em
+		opacity: 0
+		transition: .5s
+
+		&.table-left
+			left: 25px
+
+		&.table-right
+			right: 25px
+
+		@media (max-width: $small)
+			opacity: 1
+
+.main__content 
+	position: relative
+	margin-bottom: 72px
+
+	@media (max-width: $large)
+		margin-bottom: 60px
+
+	@media (max-width: $medium)
+		margin-bottom: 50px
+
+	@media (max-width: $small)
+		margin-bottom: 40px
+
+	@media (max-width: $phone)
+		margin-bottom: 25px
+
+	&.active
+		.table__wrapp 
+			opacity: 1
+
+			td span,
+			th span 
+		    filter: blur(0)
+
+		.overtable
+			opacity: 0
+			visibility: hidden
+
+.overtable 
+	position: absolute
+	top: -42px
+	width: 100%
+	z-index: 2
+	transition: .3s
+
+	@media (max-width: $medium)
+		top: -25px
+
+	&__arrow
+		background: url(../image/arrow-top.svg) no-repeat 50% 50%
+		background-size: 100%
+		width: 85.92px
+		height: 154.8px
+		margin: auto
+		margin-bottom: 30px
+		transform: translateX(-16px)
+
+		@media (max-width: $medium)
+			margin-bottom: 20px
+			transform: translateX(0)
+
+	&__title
+		font-weight: 800
+		text-transform: uppercase
+		font-size: 29px
+		padding: 0 15px
+
+		@media (max-width: $medium)
+			font-size: 25px
+
+		@media (max-width: $small)
+			font-size: 22px
+
+		@media (max-width: $phone)
+			font-size: 18px

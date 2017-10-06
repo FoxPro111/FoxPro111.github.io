@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/ArialMT.eot');
+	src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ArialMT.woff') format('woff'),
+		url('../fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansHebrew';
+	src: url('../fonts/OpenSansHebrew-ExtraBold.eot');
+	src: url('../fonts/OpenSansHebrew-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansHebrew-ExtraBold.woff') format('woff'),
+		url('../fonts/OpenSansHebrew-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/FontAwesome.eot');
+	src: url('../fonts/FontAwesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FontAwesome.woff') format('woff'),
+		url('../fonts/FontAwesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansHebrew';
+	src: url('../fonts/OpenSansHebrew-Bold.eot');
+	src: url('../fonts/OpenSansHebrew-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansHebrew-Bold.woff') format('woff'),
+		url('../fonts/OpenSansHebrew-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansHebrew';
+	src: url('../fonts/OpenSansHebrew-Light.eot');
+	src: url('../fonts/OpenSansHebrew-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansHebrew-Light.woff') format('woff'),
+		url('../fonts/OpenSansHebrew-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Hebrew';
+	src: url('../fonts/MyriadHebrew-Regular.eot');
+	src: url('../fonts/MyriadHebrew-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadHebrew-Regular.woff') format('woff'),
+		url('../fonts/MyriadHebrew-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

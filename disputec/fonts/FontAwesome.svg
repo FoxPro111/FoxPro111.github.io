@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<font id="FontAwesome" horiz-adv-x="1792">
+<font-face units-per-em="1792" font-weight="400" descent="-256" font-family="FontAwesome" bbox="0 0 0 0" underline-thickness="0" ascent="1536" unicode-range="U+0020-00D8" panose-1="0 0 0 0 0 0 0 0 0 0" underline-position="0"/>
+<missing-glyph/>
+<glyph horiz-adv-x="448" unicode=" " glyph-name="space"/>
+<glyph unicode="¨" glyph-name="dieresis"/>
+<glyph unicode="©" glyph-name="copyright"/>
+<glyph unicode="®" glyph-name="registered"/>
+<glyph unicode="´" glyph-name="acute"/>
+<glyph unicode="Æ" glyph-name="AE"/>
+<glyph unicode="Ø" glyph-name="Oslash"/>
+</font>
+</defs>
+</svg>

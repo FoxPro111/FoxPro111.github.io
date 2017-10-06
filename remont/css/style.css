@@ -634,47 +634,80 @@ img {
 }
 
 .fa-guaranty:before {
-    content: url('../image/guaranty.png')
+    content: url('../image/guaranty.svg');
+    width: 41px;
+    height: 50px;
+    display: inline-block;
 }
 
 .fa-origion:before {
-    content: url('../image/origion.png')
+    content: url('../image/origion.svg');
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
 .fa-fast:before {
-    content: url('../image/fast.png')
+    content: url('../image/fast.svg');
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
 .fa-display:before {
-    content: url('../image/display.png')
+    content: url('../image/screen.svg');
+    width: 24px;
+    height: 40px;
+    display: inline-block;
 }
 
 .fa-water:before {
-    content: url('../image/water.png')
+    content: url('../image/water.svg');
+    width: 40px;
+    height: 27px;
+    display: inline-block;
 }
 
 .fa-money:before {
-    content: url('../image/money.png')
+    content: url('../image/cash.svg');
+    width: 48px;
+    height: 49px;   
+    display: inline-block;  
 }
 
 .fa-battery:before {
-    content: url('../image/battery.png')
+    content: url('../image/battery.svg');
+    width: 23px;
+    height: 40px;
+    display: inline-block;
 }
 
 .fa-visitka:before {
-    content: url('../image/visitka.png')
+    content: url('../image/card.svg');
+    width: 40px;
+    height: 40px;   
+    display: inline-block;  
 }
 
 .fa-shirt:before {
-    content: url('../image/format.png')
+    content: url('../image/t-shirt.svg');
+    width: 40px;
+    height: 35px;
+    display: inline-block;  
 }
 
 .fa-format:before {
-    content: url('../image/format.png')
+    content: url('../image/wideprint.svg');
+    width: 40px;
+    height: 27px;  
+    display: inline-block;  
 }
 
 .fa-photoservice:before {
-    content: url('../image/photoservice-ico.png')
+    content: url('../image/photo.svg');
+    width: 33px;
+    height: 40px;   
+    display: inline-block;  
 }
 
 .repair__item {
