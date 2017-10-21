@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PALATIUM</title>
+	<link href="css/smoothDivScroll.css" rel="stylesheet" type="text/css" />
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- header -->
+	<div class="header">
+	    <div class="container-fluid">
+	        <div class="header_wrapp">
+	            <div class="header_left">
+	                <div class="header_logo"><a href=""><img src="image/logo.png" alt=""></a></div>
+	                <nav class="nav hidden">
+	                    <div class="nav_list">
+	                        <div class="nav_item"><a href="#advantage">Преимущества</a></div>
+                            <div class="nav_item"><a href="#object">Объекты</a></div>
+                            <div class="nav_item"><a href="#permit">Возможности</a></div>
+                            <div class="nav_item"><a href="#why">Почему мы</a></div>
+                            <div class="nav_item"><a href="#work">Как мы работаем</a></div>
+	                    </div>
+	                </nav>
+	            </div>
+	            <div class="header_right">
+                    <div class="header_contact">
+                        <a href="" class="contact-ico"><i class="fa fa-viber"></i></a>
+                        <a href="" class="contact-ico"><i class="fa fa-whats-up"></i></a>
+                        <a href="" class="visible768">+380 (50) 386 79 03</a>
+                        <a href="">+380 (50) 386 79 03</a>
+                    </div>
+                    <div class="header_call visible991">
+                        <button class="btn btn-green btn-call md-trigger" data-modal="call-modal">Заказать звонок</button>
+                    </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+    <!-- banner -->
+    <div class="parallax-window-banner banner" data-parallax="scroll" data-image-src="image/banner-bg.jpg">
+        <div class="container">
+            <h1 class="banner_title title">Купите недвижимость <br>от <span>25 000$</span> в Венгрии</h1>
+            <div class="subtitle">И получение документов в течение месяца</div>
+            <div class="btn_wrapp btn_wrapp-banner">
+                <button class="md-trigger btn btn-red btn-banner" data-modal="thank-modal">Смотреть объекты</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- advantages -->
+    <div class="advantage section" id="advantage">
+        <div class="side_photo_bg">
+            <div class="side_photo">
+<!--                <div class="img_cover"><img src="image/advantage_photo.jpg" alt=""></div>-->
+                <div class="parallax-window img_cover" data-parallax="scroll" data-image-src="image/advantage_photo.jpg"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="placeholder placeholder--advantage">
+                <div class="placeholder_title title">Преимущества <br>жизни в Венгрии</div>
+                <div class="advantage_list">
+                    <div class="advantage_item"><i class="fa fa-police"></i> <span>Низкий уровень преступности</span></div>
+                    <div class="advantage_item"><i class="fa fa-climate"></i> <span>Мягкий климат и прекрасная экология</span></div>
+                    <div class="advantage_item"><i class="fa fa-curort"></i> <span>Всемирно известные курорты с термальными и минеральными источни</span></div>
+                    <div class="advantage_item"><i class="fa fa-home"></i> <span>Сравнительно низкие цены на недвижимость</span></div>
+                    <div class="advantage_item"><i class="fa fa-medic"></i> <span>Надежная медицина и качественное образование</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- objects -->
+    <div class="objects section" id="object">
+        <div class="container">
+            <div class="placeholder_title title center">Наши объекты</div>
+            <div class="objects_wrapp desctop">
+                <div class="object_list">
+                    <div class="object_item wow fadeInUpBig" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-1.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Лофт молодой семьи в Будапеште</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item wow fadeInUpBig" data-wow-delay=".05s" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-2.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Коттедж для отдыха</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item wow fadeInUpBig" data-wow-delay=".1s" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-3.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Ранний модернизм</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item wow fadeInUpBig" data-wow-delay=".01s" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-4.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Холостяцкая «берлога»</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item wow fadeInUpBig" data-wow-delay=".06s" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-5.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">В гостях у сказки — Miniloft</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item wow fadeInUpBig" data-wow-delay=".11s" data-wow-duration=".5s">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img data-original="image/object-6.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Эклектичный лофт</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="objects_wrapp mobile">
+                <div id="makeMeScrollable" class="object_list">
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-1.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Лофт молодой семьи в Будапеште</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-2.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Коттедж для отдыха</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-3.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Ранний модернизм</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-4.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Холостяцкая «берлога»</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-5.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">В гостях у сказки — Miniloft</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object_item">
+                        <div class="object_bg">
+                            <div class="object_wrapp">
+                                <div class="object_photo">
+                                    <div class="img_cover"><img src="image/object-6.jpg" alt=""></div>
+                                </div>
+                                <div class="object_alert">
+                                    <div class="object_price object_price-dollars">25 000$</div>
+                                    <div class="object_price">3 000 000Ft</div>
+                                </div>
+                                <div class="object_info">
+                                    <div class="object_title">Эклектичный лофт</div>
+                                    <div class="object_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</div> 
+                                    <div class="object_btn"><button class="md-trigger object_link" data-modal="object-modal"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_wrapp center btn_wrapp-object"><a href="" class="btn btn-object">Смотреть все объекты</a></div>
+        </div>
+    </div>
+    
+    <!-- podpiska -->
+    <div class="podpiska">
+        <div class="container">
+            <div class="podpiska_row">
+                <div class="w50 podpiska_box-text">
+                    <div class="placeholder_title placeholder_title-white title">Узнайте 7 подводных камней при покупке недвижимости в Венгрии</div>
+                </div>
+                <div class="w50 podpiska_box-about">
+                    <form class="podpiska_form">
+                        <div class="form_describe">Введите свои данные в форму , и получите пдф отчет о подводных камнях при покупке недвижимости в Венгрии</div>
+                        <div class="podpiksa_form_box">
+                            <input type="text" placeholder="Введите Email" class="formIpt">
+                            <input type="submit" value="Получить отчет" class="formSbt btn btn-red">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- cases -->
+    <div class="cases section">
+        <div class="side_photo_bg side_photo_bg-left">
+            <div class="photo_slider wow fadeInUpBig">
+               <div class="img_cover">
+                   <img data-lazy="image/cais.jpg" alt="">
+               </div>
+               <div class="img_cover">
+                   <img data-lazy="image/permit.jpg" alt="">
+               </div>
+               <div class="img_cover">
+                   <img data-lazy="image/cais.jpg" alt="">
+               </div>
+               <div class="img_cover">
+                   <img data-lazy="image/permit.jpg" alt="">
+               </div>
+               <div class="img_cover">
+                   <img data-lazy="image/cais.jpg" alt="">
+               </div>
+               <div class="img_cover">
+                   <img data-lazy="image/permit.jpg" alt="">
+               </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="placeholder placeholder--cases">
+                <div class="cases_slider">
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Кейсы</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Задача</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решение</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Кейсы 4</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Задача 5</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решение 6</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат 2</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Кейсы</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Задача</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решение</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Кейсы</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Задача</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решение</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Ке21312йсы</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Зада35ча</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решaение</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases_item">
+                        <div class="placeholder_title title">Кейсы</div>
+                        <div class="cases_list">
+                            <div class="cases_box">
+                                <div class="cases_title">Задача</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Решение</div>
+                                <div class="cases_info">Как мы решали эту проблему. Сколько времени нужно было. Можно дать какие то цыфри, типа 48 обектов просмотрено, 25 чашек кофе випито и т.д.</div>
+                            </div>
+                            <div class="cases_box">
+                                <div class="cases_title">Результат</div>
+                                <div class="cases_info">Найти недвижимость для молодой семье. Чтоб был рядок парк, больница, школа и т.д.Описать насколько крутой дом мы продали который отвечает всем требованиям покупателя и он оченьд оволен</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- permit -->
+    <div class="permit section" id="permit">
+        <div class="side_photo_bg">
+            <div class="side_photo">
+<!--                <div class="img_cover"><img src="image/permit.jpg" alt=""></div>-->
+                <div class="parallax-window img_cover" data-parallax="scroll" data-image-src="image/permit.jpg"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="placeholder placeholder--permit">
+                <div class="placeholder_title title">Какие возможности дает <br>ВНЖ в Венгрии?</div>
+                <div class="alert-green">Вместе с покупкой недвижимости поможем получить вид на жительство в Венгрии.  Интересуют выгоды от ВНЖ? Узнайте прямо сейчас:</div>
+                <div class="permit_list">
+                    <div class="permit_item">Возможность эмигрировать в страну всей семьей</div>
+                    <div class="permit_item">Получение всех прав гражданина, кроме избирательного</div>
+                    <div class="permit_item">Официальное трудоустройство в стране</div>
+                    <div class="permit_item">Право на ведение собственного бизнеса</div>
+                    <div class="permit_item">Беспрепятственные поездки по странам ЕС</div>
+                    <div class="permit_item">Оформление ипотечного кредита</div>
+                    <div class="permit_item">Получение для детей бесплатного образования</div>
+                    <div class="permit_item">Оформление социальной, медицинской страховки</div>
+                    <div class="permit_item">Хранение капитала в Европейских банках</div>
+                    <div class="permit_item">Возможность оформить ПМЖ и гражданство</div>
+                </div>
+                <div class="btn_wrapp btn_wrapp-permit"><a href="" class="btn btn-permit">Узнать больше<i class="fa fa-link-arrow"><svg fill="#888" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 17" enable-background="new 0 0 11 17" xml:space="preserve"><polygon points="2.8,0.8 0.2,3.2 5.8,8.8 0.2,14.2 2.8,16.8 10.8,8.8 "/></svg>
+                    </i></a></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- get_object -->
+    <div class="get_object">
+        <div class="container">
+            <div class="podpiska_row">
+                <div class="w50 podpiska_box-text">
+                    <div class="placeholder_title placeholder_title-white title">Возврат залоговой суммы по причине отказа государства возвращается 100%</div>
+                </div>
+                <div class="w50 podpiska_box-about">
+                    <div class="get_object-block">
+                        <div class="form_describe get_object-text">Введите свои данные в форму справа, и мы подберем специально для вас подходящие объекты</div>
+                        <div class="btn_wrapp btn_wrapp-get_object"><a href="" class="btn btn-red btn-get_object">Получить подходящие объекты</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- why we -->
+    <div class="why" id="why">
+        <div class="container">
+            <div class="placeholder_title title center">Почему мы</div>
+            <div class="why_list">
+                <div class="why_item">
+                    <div class="why_ico"><i class="fa fa-result"></i></div>
+                    <div class="why_info">
+                        <div class="why_title">Результат</div>
+                        <div class="why_text">Все наши клиенты получают документы. Работаем без отказов</div>
+                    </div>
+                </div>
+                <div class="why_item">
+                    <div class="why_ico"><i class="fa fa-dogovor"></i></div>
+                    <div class="why_info">
+                        <div class="why_title">Договор</div>
+                        <div class="why_text">Заключаем договор, несем ответственность за выполнение обязательств</div>
+                    </div>
+                </div>
+                <div class="why_item">
+                    <div class="why_ico"><i class="fa fa-conf"></i></div>
+                    <div class="why_info">
+                        <div class="why_title">Конфиденциальность</div>
+                        <div class="why_text">Сохраняем полную секретность вне зависимости от обстоятельств</div>
+                    </div>
+                </div>
+                <div class="why_item">
+                    <div class="why_ico"><i class="fa fa-opyt"></i></div>
+                    <div class="why_info">
+                        <div class="why_title">Опыт</div>
+                        <div class="why_text">В продажах недвижимости</div>
+                    </div>
+                </div>
+                <div class="why_item">
+                    <div class="why_ico"><i class="fa fa-speed"></i></div>
+                    <div class="why_info">
+                        <div class="why_title">Скорость</div>
+                        <div class="why_text">Вы получите ВНЖ Гражданство в минимально возможные сроки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- work -->
+    <div class="work section" id="work">
+        <div class="container">
+            <div class="side_photo_bg side_photo_bg-left">
+                <div class="side_photo">
+<!--                    <div class="img_cover"><img src="image/work.jpg" alt=""></div>-->
+                    <div class="parallax-window img_cover" data-parallax="scroll" data-image-src="image/work.jpg"></div>
+                </div>
+            </div>
+            <div class="placeholder placeholder--work">
+                <div class="placeholder_title title">Работаем на прямую с людьми живущими в Венгрии <small>(не посредники)</small></div>
+                <div class="placeholder_text">Введите свои данные в форму справа, и мы подберем специально для вас подходящие объекты</div>
+                <div class="btn_wrapp btn_wrapp-work"><a href="" class="btn btn-red btn-work">Получить подходящие объекты</a></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- buy -->
+    <div class="parallax-window-banner buy" data-parallax="scroll" data-image-src="image/buy.jpg" data-speed=".7" data-z-index="-5">
+        <div class="container">
+            <div class="placeholder_title title center">Процедура покупки недвижимости</div>
+            <div class="buy_list">
+                <div class="buy_item">
+                    <div class="buy_wrapp">
+                        <div class="buy_title">Подбор недвижимости согласно ваших критериев</div>
+                        <div class="buy_text">На этом этапе мы подберем для вас объекты недвижимости и согласуем дату вашего приезда для их просмотра, а так же сопроводим при просмотре недвижимости.</div>
+                    </div>
+                </div>
+                <div class="buy_item">
+                    <div class="buy_wrapp">
+                        <div class="buy_title">Заключение предварительного договора с 10% предоплатой у нотариуса</div>
+                        <div class="buy_text">Мы сопроводим сделку купли-продажи понравившейся вам недвижимости. Для этого мы можете прилететь в Венгрию для подписания договора или дистанционно (заверение подписи у консула)</div>
+                    </div>
+                </div>
+                <div class="buy_item">
+                    <div class="buy_wrapp">
+                        <div class="buy_title">Получение разрешения на покупку недвижимости в Венгрии</div>
+                        <div class="buy_text">Как правило, получение разрешения занимает 1 месяц. Оформлением разрешения на покупку недвижимости в Венгрии будет заниматься адвокат нашей компании.</div>
+                    </div>
+                </div>
+                <div class="buy_item">
+                    <div class="buy_wrapp">
+                        <div class="buy_title">Получение свидетельства о праве собственности</div>
+                        <div class="buy_text">После заключения договора мы зарегистрируем за вами право собственности и вы получите свидетельство о праве собственности на купленную недвижимость. Так же на этом этапе будет необходимо оплатить государственные пошлины.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- faq -->
+    <div class="faq">
+        <div class="container">
+            <div class="answer">
+                <div class="placeholder_title title">Частые вопросы</div>
+                <div class="answer_list">
+                    <div class="answer_box">
+                        <div class="answer_question">Кто может купить недвижимость в Венгрии?</div>
+                        <div class="answer_answer">Покупка жилья в стране разрешена физическим и юридическим лицам из любой страны мира.</div>
+                    </div>
+                    <div class="answer_box">
+                        <div class="answer_question">Сколько времени занимает разрешение на покупку от венгерских властей?</div>
+                        <div class="answer_answer">Срок рассмотрения заявки – 30-45 дней (в исключительных случаях – 60 дней).</div>
+                    </div>
+                    <div class="answer_box">
+                        <div class="answer_question">Какие налоги нужно заплатить после покупки недвижимости?</div>
+                        <div class="answer_answer">С 2013 года рассчитывается: 4% от стоимости приобретенного жилья.</div>
+                    </div>
+                    <div class="answer_box">
+                        <div class="answer_question">Необходимо ли вносить залог при покупке?</div>
+                        <div class="answer_answer">Первичная сумма взноса – 10% от стоимости жилья вносится до получения разрешения от властей на покупку.</div>
+                    </div>
+                    <div class="answer_box">
+                        <div class="answer_question">Какими документами оформляется собственность на недвижимость? </div>
+                        <div class="answer_answer">Вы получаете свидетельство о регистрации собственности, выданное кадастровым органом.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <div class="question_block wow fadeInUp fadeIn">
+                    <div class="placeholder_title placeholder_title-white title">Остались воросы?</div>
+                    <div class="question_text">Введите свои данные в форму справа, и получите пдф отчет о подводных камнях при покупке недвижимости в Венгрии</div>
+                    <form class="question_form">
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Укажите Ваше Имя и Фамилию"></label>
+                        </div>
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Укажите Ваш номер телефона"></label>
+                        </div>
+                        <div class="material-textfield">
+                            <input type="text" required/>
+                            <label data-content="Укажите Ваш Email"></label>
+                        </div>
+                        <div class="material-textfield">
+                            <textarea name="" required></textarea>
+                            <label data-content="Ваш вопрос..."></label>
+                        </div>
+                        <input type="submit" value="Узнать о подводных камнях" class="btn btn-red btn-question">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact_block">
+                <div class="placeholder_title placeholder_title-white title">Контакты</div>
+                <div class="contact_list">
+                    <div class="contact_item"><i class="fa fa-location"></i>Lorem ipsum dolor sit amet, consectetuer</div>
+                    <div><a href="#" class="contact_item"><i class="fa fa-viber-color"></i>+380 (50) 386 79 03</a></div>
+                    <div><a href="#" class="contact_item"><i class="fa fa-whatup-color"></i>+380 (50) 386 79 03</a></div>
+                    <div><a href="#" class="contact_item"><i class="fa fa-phone-2"></i>+380 (93) 707 48 05</a></div>
+                    <div><a href="#" class="contact_item contact_item--mail"><i class="fa fa-mail"></i>test@test.com</a></div>
+                </div>
+                <div class="copyright">Copyright © - 2017</div>
+                <div class="yourfuture">
+                    <a href=""><img src="image/logo-yourfuture.svg" alt=""></a>
+                </div>
+                <div class="arrow_top home"></div>
+            </div>
+            <div class="map_container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- modal window   -->
+    
+    <div class="md-modal modal-min thank-modal md-effect-3" id="thank-modal">
+        <div class="md-content">
+            <div class="thank_logo"><img src="image/logo.png" alt=""></div>
+            <div class="thank_title">Спасибо ;)</div>
+            <div class="thank_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+        </div>
+        <div class="modal-close md-close"></div>
+    </div>
+    
+    <div class="md-modal modal-min call-modal md-effect-3" id="call-modal">
+        <div class="md-content">
+            <div class="placeholder_title placeholder_title-white title">В нашей базе больше 1000 объектов</div>
+            <div class="question_text">Введите свои данные в форму ниже, и мыподберем специально для вас подходящие объекты</div>
+            <form class="question_form">
+                <div class="material-textfield">
+                    <input type="text" required/>
+                    <label data-content="Укажите Ваше Имя"></label>
+                </div>
+                <div class="material-textfield">
+                    <input type="text" required/>
+                    <label data-content="Укажите Ваш номер телефона"></label>
+                </div>
+                <div class="material-textfield material-textfield-summ">
+                    <div class="summ">Сумма покупки?</div>
+                    <div class="input_boxes">
+                        <input type="text" required/>
+                        <label data-content="От"></label>
+                    </div>
+                    <div class="input_boxes">
+                        <input type="text" required/>
+                        <label data-content="До"></label>
+                    </div>
+                </div>
+                <div class="material-textfield">
+                    <input type="text" required/>
+                    <label data-content="Какой район"></label>
+                </div>
+                <input type="submit" value="Получить подходящие объекты" class="btn btn-red btn-question">
+            </form>
+        </div>
+        <div class="modal-close md-close"></div>
+    </div>
+    
+    <div class="md-modal object-modal md-effect-3" id="object-modal">
+        <div class="md-content">
+            <div class="modal_wrapp">
+                <div class="modal_slider">
+                    <div class="object_alert object_alert-modal">
+                        <div class="object_price object_price-dollars">25 000$</div>
+                        <div class="object_price">3 000 000Ft</div>
+                    </div>
+                    <div class="fotorama" data-nav="thumbs">
+                        <a href="image/slider_photo_min.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                        <a href="image/slider_photo.jpg"><img src="image/slider_photo_min.jpg"></a>
+                    </div>
+                </div>
+                <div class="modal_text">
+                    <div class="modal_title">Эклектичный лофт</div>
+                    <div class="modal_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
+                    <div class="btn_wrapp btn_wrapp-modal"><a href="" class="btn btn-permit">Узнать больше<i class="fa fa-link-arrow"><svg fill="#888" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 17" enable-background="new 0 0 11 17" xml:space="preserve"><polygon points="2.8,0.8 0.2,3.2 5.8,8.8 0.2,14.2 2.8,16.8 10.8,8.8 "/></svg>
+                    </i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-close md-close"></div>
+    </div>
+    
+    <div class="md-overlay"></div>
+    
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.0.1/lazyload.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASetFwaACG1kLSdjlJaA6vNg69ZMVTP0A"></script>        
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 12,                     // Set the zoom level manually
+			scrollwheel: false,
+			disableDoubleClickZoom: true,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+        };
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.6700, -73.9400),
+            map: map,
+            title: 'Snazzy!',
+            icon: 'image/ico-map.png' // null = default icon
+        });
+    }
+</script>
+</html>
