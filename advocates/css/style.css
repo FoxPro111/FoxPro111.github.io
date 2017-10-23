@@ -302,6 +302,7 @@ img {
     width: 0;
     visibility: hidden;
     overflow: hidden;
+    border: 1px solid #f3f3f3;
 }
 
 @media (max-width: 991px) {
@@ -2482,4 +2483,25 @@ p a {
 
 .slideOutLeft {
     transform-origin: 0 0;
+}
+
+/* row-solution */
+
+.solution {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.row-solution .crew__soc a {
+    right: 20px;
+}
+
+.row-solution .crew__avatar {
+    padding: 0 30px;
+}
+
+@media (max-height: 768px) {
+    .solution {
+        margin: 30px auto;
+    }
 }
