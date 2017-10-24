@@ -61,4 +61,24 @@ $('.partner__slide').slick({
         swipe: true
       }
     }]
+$('.news__slider').slick({
+  slidesToShow: 3,
+  arrows: false,
+  dots: false,
+  swipe: false,
+	responsive: [{
+      breakpoint: 991,
+      settings: {
+			  slidesToShow: 2,
+        swipe: true,
+        arrows: true
+      }
+    },{
+      breakpoint: 768,
+      settings: {
+			  slidesToShow: 1,
+        swipe: true,
+        arrows: true
+      }
+    }]
 })
