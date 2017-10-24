@@ -61,6 +61,39 @@ $('.partner__slide').slick({
         swipe: true
       }
     }]
+})
+
+// section slide
+
+$('.section__slide__layout').slick({
+	// arrows: false,
+	dots: false,
+	swipe: false,
+	fade: true,
+	responsive: [{
+      breakpoint: 991,
+      settings: {
+        swipe: true
+      }
+    }]
+})
+
+// $('.slick-prev').click(function(event) {
+// 	$(this).parent().find('.section__slide__layout').find('.slick-current').addClass('animate left');
+// 	setTimeout(function () {
+// 		// $('#slider-2').slick("slickPrev");
+// 		// $(this).parent().find('.section__slide__layout').find('.slick-current').removeClass('animate left');
+// 	}, 1000); 
+// });
+
+// $('.slick-next').click(function(event) {
+// 	$(this).parent().find('.section__slide__layout').find('.slick-slide').addClass('animate right');
+// 	setTimeout(function () {
+// 		// $('#slider-2').slick("slickNext");
+// 		// $(this).parent().find('.section__slide__layout').find('.slick-slide').removeClass('animate right');
+// 	}, 1000); 
+// });
+
 $('.news__slider').slick({
   slidesToShow: 3,
   arrows: false,
