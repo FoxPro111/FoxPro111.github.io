@@ -67,6 +67,15 @@ table {
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+.slick-slide a {
+    outline: none;
 }
 
 .slick-list
@@ -1373,13 +1382,15 @@ body {
 /* form section */
 
 .section-form {
-    padding: 0;
+    padding: 20px 0;
 }
 
 .form__wrapp {
     background: linear-gradient(90deg, #3ac7b8, #62ddd0);
     border-radius: 7px;
     padding: 50px 15px 75px;
+    z-index: 3;
+    position: relative;
 }
 
 .form__row {
@@ -1448,6 +1459,49 @@ body {
     color: #3ac7b8;
 }
 
+.form__wrapp__container {
+    position: relative;
+    font-size: 20px;
+}
+
+.form__big {
+    height: 8.5em;
+    width: 8.5em;
+    left: -6.5em;
+    top: -3em;
+    z-index: 2;
+}
+
+.form__small {
+    width: 4.5em;
+    height: 4.5em;
+    left: -9em;
+    top: 7em;
+}
+
+.form__smaller {
+    width: 3.35em;
+    height: 3.35em;
+    z-index: 4;
+    bottom: -1.3em;
+    right: -1.3em;
+}
+
+.form__mini {
+    width: 1.5em;
+    height: 1.5em;
+    left: -13.8em;
+    top: 5.75em;
+}
+
+.form__mikro {
+    width: 1.4em;
+    height: 1.4em;
+    right: -4.7em;
+    top: 12em;
+}
+
+
 @media (max-width: 991px) {
     .form__row {
         max-width: none;
@@ -1486,3 +1540,307 @@ body {
         text-align: center;
     }
 }
+
+/* section content slide */
+
+.section__slide {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section__slide .slick-list {
+    overflow: visible;
+}
+
+.section__slide__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.section__slide__item {
+    padding: 0 30px 60px;
+    position: relative;
+    height: 400px;
+}
+
+.section__slide__wrapp {
+    position: relative;
+}
+
+.section__slide__main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 340px;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 7px;
+    z-index: 4;
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: 0;
+    outline: none;
+}
+
+.slick-prev {
+    overflow: hidden;
+    text-indent: -999px;
+    border-radius: 50%;
+    background: url('../image/arrow-left.png');
+    width: 40px;
+    height: 40px;
+    border: 0;
+    box-shadow: none;
+    left: 50%;
+    transform: translateX(-45px);
+    z-index: 3;
+}
+
+.slick-next {
+    overflow: hidden;
+    text-indent: -999px;
+    border-radius: 50%;
+    background: url('../image/arrow-right.png');
+    width: 40px;
+    height: 40px;
+    border: 0;
+    box-shadow: none;
+    left: 50%;
+    transform: translateX(5px);
+}
+
+.slick-arrow:hover {
+    opacity: .7;
+}
+
+.section__slide__back {
+    position: absolute;
+    opacity: .5;
+    z-index: 3;
+    width: 100%;
+    height: 300px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.section__slide__prev {
+    left: -30px;
+}
+
+.section__slide__next {
+    right: -30px;
+}
+
+.section__slide__prev img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+}
+
+.section__slide__back {
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .section__slide {
+        margin-bottom: 30px;
+    }
+}
+
+/* animation */
+
+/* .section__slide__main,
+.section__slide__next,
+.section__slide__prev {
+    transition: 1s;
+}
+
+.slick-slide.left .section__slide__main {
+    height: 300px;
+    left: -30px;
+    opacity: .5;
+    top: 20px;
+    width: 100%;
+    z-index: 3;
+}
+
+.slick-slide.left .section__slide__next {
+    height: 340px;
+    right: 0;
+    opacity: 1;
+    top: 0;
+    z-index: 4;
+}
+
+.slick-slide.left .section__slide__prev {
+    height: 260px;
+    left: -60px;
+    opacity: 0;
+    top: 40px;
+    z-index: 2;
+}
+
+
+
+.slick-slide.right .section__slide__main {
+    height: 300px;
+    left: 30px;
+    opacity: .5;
+    top: 20px;
+    width: 100%;
+    z-index: 3;
+}
+
+.slick-slide.right .section__slide__next {
+    height: 260px;
+    right: -60px;
+    opacity: 0;
+    top: 40px;
+    z-index: 2;
+}
+
+.slick-slide.right .section__slide__prev {
+    height: 340px;
+    left: 0;
+    opacity: 1;
+    top: 0;
+    z-index: 4;
+}
+
+ */
+
+ /* new tech circle */
+
+body {
+    overflow-x: hidden;
+}
+
+.section-tecno {
+    padding-top: 120px;
+}
+
+.new__tech {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+ .new__tech__wrapp {
+    position: relative;
+    width: 23.5em;
+    height: 16.5em;
+ }
+
+ .new__tech__img {
+    position: absolute;
+    width: 36.1em;
+    height: 27.1em;
+    top: -5em;
+    left: -6em;
+    z-index: 3;
+ }
+
+ .new__tech__img img {
+    width: 100%;
+ }
+
+ .new__tech__big {
+    width: 16.5em;
+    height: 16.5em;
+    top: -4.8em;
+    left: 4em;
+    z-index: 2;
+ }
+
+ .new__tech__small {
+    width: 6.5em;
+    height: 6.5em;
+    left: 21em;
+    top: -5.8em;
+ }
+
+ .new__tech__mikro {
+    width: 1.7em;
+    height: 1.7em;
+    left: 30.5em;
+    top: -0.5em;
+ }
+
+ .new__aparat img {
+    width: 100%;
+ }
+
+ .new__aparat {
+    position: absolute;
+    width: 21.3em;
+    height: 24.05em;
+    top: -10em;
+    left: -.5em;
+    z-index: 3;
+ }
+
+ .new__tech--aparat {
+    margin-top: 100px;
+ }
+
+ @media (max-width: 1230px) {
+     .new__tech {
+        font-size: 16px;
+     }
+ }
+
+ @media (max-width: 991px) {
+     .new__tech {
+        font-size: 13px;
+        margin-top: 70px;
+     }
+
+     .new__tech--aparat {
+        margin-top: 180px;
+     }
+
+     .section-tecno {
+        padding-top: 70px;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .new__tech__img,
+     .new__aparat {
+        display: none;
+     }
+
+     .new__tech__wrapp {
+        height: 0;
+        width: 100%;
+     }
+
+     .new__tech {
+        margin: 0;
+        font-size: 2.6vw;
+     }
+
+     .new__tech__big {
+        width: 10em;
+        height: 10em;
+        left: auto;
+        right: -5.5em;
+        z-index: -1;
+        top: -15em;
+     }
+
+     .new__tech__small {
+        width: 6em;
+        height: 6em;
+        left: -4em;
+        top: -25em;
+        z-index: -1;
+     }
+ }
