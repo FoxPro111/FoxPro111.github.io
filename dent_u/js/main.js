@@ -96,15 +96,13 @@ $('.section__slide__layout').slick({
 
 $('.news__slider').slick({
   slidesToShow: 3,
-  arrows: false,
   dots: false,
   swipe: false,
 	responsive: [{
       breakpoint: 991,
       settings: {
 			  slidesToShow: 2,
-        swipe: true,
-        arrows: true
+        swipe: true
       }
     },{
       breakpoint: 768,
@@ -124,3 +122,6 @@ $('.footer__header').click(function(event) {
 	
 	return false;
 });
+
+// wow initt
+new WOW().init();
