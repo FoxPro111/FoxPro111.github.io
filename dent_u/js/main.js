@@ -115,3 +115,12 @@ $('.news__slider').slick({
       }
     }]
 })
+
+// footer list
+
+$('.footer__header').click(function(event) {
+	$(this).css('display', 'none');
+	$(this).next().css('display', 'block');
+	
+	return false;
+});
