@@ -4,7 +4,7 @@ $('.mobile__btn').click(function(event) {
     $('body').toggleClass('active');
     $("html, body").animate({scrollTop: 0 }, 200);
     $('.header').toggleClass('active');
-    $(this).toggleClass('active');
+    $('.mobile__btn').toggleClass('active');
 });
 
 
@@ -125,3 +125,46 @@ $('.footer__header').click(function(event) {
 
 // wow initt
 new WOW().init();
+
+// news item height
+
+function news__item () {
+  var min_height = 0;
+  var min_height__big = 0;
+
+  $('.news__list__item').css('height', 'auto');
+
+  $('.news__list__item').each(function(index, el) {
+    if($(this).outerHeight() > min_height && !$(this).hasClass('news__list__item--long')) {
+      min_height = $(this).outerHeight();
+    }
+  });
+  
+  $('.news__list__item').each(function(index, el) {
+    if($(this).outerHeight() > min_height__big && $(this).hasClass('news__list__item--long')) {
+      min_height__big = $(this).outerHeight();
+    }
+  });
+
+  if (min_height__big > min_height * 2 - 30) {
+    min_height = min_height__big/2;
+  } else {
+    min_height__big = min_height * 2 + 30;
+  }
+
+  $('.news__list__item').each(function(index, el) {
+    if(!$(this).hasClass('news__list__item--long')) {
+      $(this).outerHeight(min_height);
+    }
+  });
+
+  $('.news__list__item').each(function(index, el) {
+    if($(this).hasClass('news__list__item--long')) {
+      $(this).outerHeight(min_height__big);
+    }
+  });
+}
+
+$(window).on("load resize",function(e){
+  news__item();
+})
