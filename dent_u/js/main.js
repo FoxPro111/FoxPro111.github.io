@@ -235,3 +235,25 @@ $('.btn-nav').click(function(event) {
 
   return false;
 });
+
+$('.alert__close').click(function(event) {
+  $(this).closest('.form__wrapp').removeClass('alert-active');
+});
+
+function oneHeight(array) {
+  var height = 0;
+  // if(array.lenght) {
+    array.css('height', 'auto');
+    array.each(function(index, el) {
+      if (height < $(this).outerHeight()) {
+        height = $(this).outerHeight();
+      }
+    });
+    array.css('height', height + 'px');
+  // }
+}
+
+$(window).on("load resize",function(e){
+  oneHeight($('.news__wrapp'));
+  oneHeight($('.service__item'));
+})
