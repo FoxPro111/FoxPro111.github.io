@@ -1,3 +1,33 @@
+// img to svg
+$('img.svg').each(function(){
+    var $img = $(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+
+    $.get(imgURL, function(data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = $(data).find('svg');
+
+        // Add replaced image's ID to the new SVG
+        if(typeof imgID !== 'undefined') {
+            $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+
+    }, 'xml');
+
+});
+
 // nav menu mobile
 
 $('.mobile__btn').click(function(event) {
@@ -98,7 +128,32 @@ $('.news__slider').slick({
   slidesToShow: 3,
   dots: false,
   swipe: false,
+  responsive: [{
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        swipe: true
+      }
+    },{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        swipe: true,
+        arrows: true
+      }
+    }]
+})
+
+$('.service__slider').slick({
+  slidesToShow: 4,
+  dots: false,
+  swipe: false,
 	responsive: [{
+      breakpoint: 1230,
+      settings: {
+        slidesToShow: 1
+      }
+    },{
       breakpoint: 991,
       settings: {
 			  slidesToShow: 2,
@@ -168,3 +223,15 @@ function news__item () {
 $(window).on("load resize",function(e){
   news__item();
 })
+
+
+// nav service
+
+$('.btn-nav').click(function(event) {
+  if ($(this).hasClass('btn-inverse')) {
+    $('.btn-nav').addClass('btn-inverse');
+    $(this).removeClass('btn-inverse');
+  }
+
+  return false;
+});
