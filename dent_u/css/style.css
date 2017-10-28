@@ -1169,16 +1169,8 @@ body {
 /* menu__list */
 
 .menu__list {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: #fff;
     min-height: 39px;
+    border-radius: 10px;
 }
 
 .menu__item {
@@ -1188,9 +1180,22 @@ body {
         -ms-flex: 0 0 20%;
             flex: 0 0 20%;
     max-width: 20%;
-    margin-top: -69px;
     position: relative;
+}
+
+.menu__list__shadow {
+    margin-top: -69px;
     background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.04); 
+    border-radius: 10px;
 }
 
 .menu__item:after {
@@ -1209,7 +1214,6 @@ body {
 }
 
 .menu__list__wrapp {
-    background: #fff;
     margin-top: -39px;
     z-index: 3;
     position: relative;
@@ -1434,13 +1438,15 @@ body {
         color: #656565;
     }
 
-    .menu__list {
+    .menu__list__shadow {
         display: block;
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     .menu__item {
         max-width: 100%;
-        margin-top: 0;
     }
 
     .menu__item:after {
@@ -1664,6 +1670,10 @@ body {
 .slick-dots li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.slick-dots li:before {
+    display: none;
 }
 
 .slick-dots li:last-child {

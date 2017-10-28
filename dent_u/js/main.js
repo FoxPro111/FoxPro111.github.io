@@ -257,3 +257,44 @@ $(window).on("load resize",function(e){
   oneHeight($('.news__wrapp'));
   oneHeight($('.service__item'));
 })
+
+// $('.count').each(function () {
+//     $(this).prop('Counter',0).animate({
+//         Counter: $(this).text()
+//     }, {
+//         duration: 2000,
+//         easing: 'swing',
+//         step: function (now) {
+//             $(this).text(Math.ceil(now));
+//         }
+//     });
+// });
+
+function counter(){
+  $('.count').each(function(index, el) {
+    var this_offset_Top = $(this).offset().top;
+    var this_offset_bottom = $(this).offset().top + $(this).outerHeight();
+    var window__bottom = $(window).scrollTop() + $(window).outerHeight()*.95;
+    var window__top = $(window).scrollTop();
+
+    console.log(window__bottom);
+    console.log(this_offset_Top);
+
+    if (window__bottom > this_offset_Top && window__top < this_offset_bottom && $(this).hasClass('count')) {
+      $(this).removeClass('count');
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+    }
+  });
+}
+
+$(window).on("load scroll",function(e){
+  counter();
+});
