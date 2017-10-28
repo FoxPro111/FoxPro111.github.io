@@ -967,14 +967,14 @@ img {
 }
 
 .site_name {
-    font-size: 40px;
+    font-size: 46px;
     font-weight: normal;
     font-family: 'OpenSansHebrew';
 }
 
 .site__title {
     font-weight: normal;
-    font-size: 26px;
+    font-size: 36px;
     font-family: 'OpenSansHebrew';
 }
 
@@ -1145,7 +1145,7 @@ img {
 
 .view__title {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color: #656598;
 }
@@ -1562,6 +1562,7 @@ img {
     font-family: 'OpenSansHebrew';
     color: #656598;
     margin-bottom: 30px;
+    font-weight: normal;
 }
 
 .review__review p {
@@ -1969,6 +1970,8 @@ img {
             box-shadow: none;
     border: 1px solid #ceab66;
     padding: 0 10px;
+    font-size: 20px;
+    padding-top: 2px;
 }
 
 .contact__form__box-sbt {
@@ -2071,6 +2074,12 @@ img {
     -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
        -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
             box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+}
+
+.contact__facebook iframe {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 }
 
 iframe {
