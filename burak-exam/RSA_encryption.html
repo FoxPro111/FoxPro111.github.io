@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDEA</title>
+	<style>
+		
+		.table {
+			border-left: 1px solid #000;
+			border-top: 1px solid #000;
+			margin-top: 30px;
+			border-collapse: collapse;
+		}
+
+		.table td,
+		.table th {
+			border-right:  1px solid #000;
+			border-bottom: 1px solid #000;
+			padding: 5px;
+		}
+
+		b {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h3>Зашифруйте повідомлення М = * алгоритмом RSA з відкритим ключем KU = {**, ***}.</h3>
+	<input id="povidomlennya" type="number" min="0" placeholder="Введіть М" required>
+	<input id="KU-1" type="number" min="0" placeholder="Введіть KU - 1" required>
+	<input id="KU-2" type="number" min="0" placeholder="Введіть KU - 2" required>
+	<input type="submit" onclick="main()">
+
+	<div id="alert"></div>
+
+</body>
+<script src="js/rsa_encryption.js"></script>
+</html>
+
+
+
+

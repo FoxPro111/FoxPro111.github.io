@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDEA</title>
+	<style>
+		
+		.table {
+			border-left: 1px solid #000;
+			border-top: 1px solid #000;
+			margin-top: 30px;
+			border-collapse: collapse;
+		}
+
+		.table td,
+		.table th {
+			border-right:  1px solid #000;
+			border-bottom: 1px solid #000;
+			padding: 5px;
+		}
+
+		b {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h3>Використовуючи розширений алгоритм Евкліда, знайдіть НСД(d, f) та d^-1 mod f, а також –d mod f для d = * та f = **. Виконайте перевірку отриманих значень d^-1 та –d.</h3>
+	<input id="d" type="number" min="0" placeholder="Введіть d" required>
+	<input id="f" type="number" min="0" placeholder="Введіть f" required>
+	<input type="submit" onclick="main()">
+
+	<div id="alert"></div>
+
+</body>
+<script src="js/evklid.js"></script>
+</html>
+
+
+
+
