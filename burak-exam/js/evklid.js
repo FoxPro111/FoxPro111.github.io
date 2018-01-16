@@ -53,7 +53,6 @@ function evqlid(smallNuber, biggestNumber) {
 			rozrah += '<b>' + i +' Крок</b></br>';
 
 			q = Math.floor(x3/y3);
-			console.log(q);
 
 			rozrah += 'Q = x3/y3 = ' + x3 + '/' + y3 + ' = <b>' + q + '</b><br/>';
 
@@ -90,11 +89,7 @@ function evqlid(smallNuber, biggestNumber) {
 
 		alert += '</table>';
 
-		result[1] = Math.abs(y2);
-		result[1] = y3 == 0 ? x3 : result[1];
-		result[1] = y3 == 1 ? y3 : result[1];
-		console.log(y3);
-		console.log(result[1]);
+		result[1] = Math.abs(x3);
 		result[2] = y2;
 		result[3] = y1;
 

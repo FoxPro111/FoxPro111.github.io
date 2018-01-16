@@ -52,8 +52,8 @@ function main() {
 
 	var f1 = document.getElementById('f1').value != '' ? document.getElementById('kod').value : 'AB57',
 			f2 = document.getElementById('f2').value != '' ? document.getElementById('kod').value : '5678',
-			z5 = document.getElementById('f1').value != '' ? document.getElementById('kod').value : 'AB01',
-			z6 = document.getElementById('f1').value != '' ? document.getElementById('kod').value : '10FC';
+			z5 = document.getElementById('z5').value != '' ? document.getElementById('kod').value : 'AB01',
+			z6 = document.getElementById('z6').value != '' ? document.getElementById('kod').value : '10FC';
 
 	var arrayValue = [],
 			arrayValueNew = [],
@@ -63,8 +63,6 @@ function main() {
 	arrayValue[1] = f2;
 	arrayValue[2] = z5;
 	arrayValue[3] = z6;
-
-
 
 	arrayValueNew[0] = parseInt(f1, 16).toString(10);
 	arrayValueNew[1] = parseInt(f2, 16).toString(10);
@@ -99,6 +97,3 @@ function main() {
 	return false;
 
 }
-// - //
-
-main();
