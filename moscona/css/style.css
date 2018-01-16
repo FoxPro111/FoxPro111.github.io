@@ -2059,9 +2059,10 @@ img {
 }
 
 .contact__name {
-    font-family: 'Myriad Hebrew';
+    font-family: 'OpenSansHebrew';
+    font-weight: normal;
     font-size: 46px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #CEAB66;
 }
 

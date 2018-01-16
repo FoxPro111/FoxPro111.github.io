@@ -20,7 +20,7 @@ function XOR(arrayText, arrayKey) {
 }
 
 function add16(arrayText, arrayText2) {
-	return (arrayText+arrayText2)%65536;
+	return (parseInt(arrayText)+parseInt(arrayText2))%65536;
 }
 
 function bin2dec(num){
@@ -30,7 +30,7 @@ function bin2dec(num){
 }
 
 function mul16(arrayText, arrayText2) {
-	return (arrayText*arrayText2)%65537;
+	return (parseInt(arrayText)*parseInt(arrayText2))%65537;
 }
 
 	function dec2bin(dec,length){
@@ -50,10 +50,10 @@ function mul16(arrayText, arrayText2) {
 function main() {
 	var alert = '';
 
-	var f1 = document.getElementById('f1').value != '' ? document.getElementById('kod').value : 'AB57',
-			f2 = document.getElementById('f2').value != '' ? document.getElementById('kod').value : '5678',
-			z5 = document.getElementById('z5').value != '' ? document.getElementById('kod').value : 'AB01',
-			z6 = document.getElementById('z6').value != '' ? document.getElementById('kod').value : '10FC';
+	var f1 = document.getElementById('f1').value != '' ? document.getElementById('f1').value : 'AB57';
+	var f2 = document.getElementById('f2').value != '' ? document.getElementById('f2').value : '5678';
+	var z5 = document.getElementById('z5').value != '' ? document.getElementById('z5').value : 'AB01';
+	var z6 = document.getElementById('z6').value != '' ? document.getElementById('z6').value : '10FC';
 
 	var arrayValue = [],
 			arrayValueNew = [],
@@ -88,8 +88,8 @@ function main() {
   alert += '<table class="table table-pre">';
   alert += '<tr><td>Res1<td>(F1*Z5) mod 65537</td><td>' + (res1 = mul16(f1, z5)) + '</td></tr>';
   alert += '<tr><td>Res2<td>(Res1+F2) mod 65536</td><td>' + (res2 = add16(res1, f2)) + '</td></tr>';
-  alert += '<tr><td>Res3<td>(Z6*Res2) mod 65537</td><td>' + (res3 = mul16(res2, z6)) + '</td></tr>';
-  alert += '<tr><td>Res4<td>(Res1+Res3) mod 65536</td><td>' + (res4 = add16(res1, res3)) + '</td></tr>';
+  alert += '<tr><td>G2<td>(Z6*Res2) mod 65537</td><td>' + (res3 = mul16(res2, z6)) + '</td></tr>';
+  alert += '<tr><td>G1<td>(Res1+G2) mod 65536</td><td>' + (res4 = add16(res1, res3)) + '</td></tr>';
   alert += '</table>';
 
 	document.getElementById('alert').innerHTML = alert;
