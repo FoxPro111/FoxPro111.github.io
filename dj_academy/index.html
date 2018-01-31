@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DJ Academy</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,14 +15,14 @@
 	<!--  header -->
 	<header class="header">
 		<div class="container">
-			<div class="header__logo logo"><a href="index.html"><img src="image/logo.png" alt="DJ Academy"></a></div>
+			<div class="header__logo logo"><h1><a class="scroll__link" href="#form"><img src="image/logo.png" alt="DJ Academy">DJ Academy</a></h1></div>
 			<nav class="header__nav nav">
 				<ul class="nav__list">
 					<li class="nav__item"><a href="#about_academy" class="scroll__link">ОБ АКАДЕМИИ</a></li>
 					<li class="nav__item"><a href="#our_course" class="scroll__link">НАшИ КУРСЫ</a></li>
 					<li class="nav__item"><a href="#reviews" class="scroll__link">ОТЗЫВЫ</a></li>
 					<li class="nav__item"><a href="#contacts" class="scroll__link">КОНТАКТЫ</a></li>
-					<li class="nav__item nav__item--form"><a href="#register" class="scroll__link">ЗАПИСАТЬСЯ</a></li>
+					<li class="nav__item nav__item--form"><a href="#form" class="scroll__link">ЗАПИСАТЬСЯ</a></li>
 				</ul>
 			</nav>
 			<div class="nav__btn">
@@ -33,7 +35,7 @@
 	<!-- header end -->
 
 	<!-- site banner -->
-	<div class="banner section">
+	<div class="banner section" id="form">
 		<canvas id="canvas-basic"></canvas>
 		<div class="container">
 			<h2 class="site__title">Стань профессиональным диджеем</h2>
@@ -45,17 +47,17 @@
 				<div class="banner__form form column">
 					<form action="" method="POST" class="form__form">
 						<div class="form__item">
-							<input type="text" placeholder="Ваше имя" class="form__item__input form__item__input--text">
+							<input id="input-header-1" type="text" placeholder="Ваше имя" class="form__item__input form__item__input--text">
 						</div>
 						<div class="form__item">
-							<input type="text" placeholder="Ваш телефон" class="form__item__input form__item__input--text">
+							<input id="input-header-2" type="text" placeholder="Ваш телефон" class="form__item__input form__item__input--text">
 						</div>
 						<div class="form__item form__item--select">
 							<select name="form-select" id="form-select-1" class="form__item__select">
 								<option value="" disabled selected>Выберите курс</option>
-								<option value="">Курс 1</option>
-								<option value="">Курс 2</option>
-								<option value="">Курс 3</option>
+								<option value="mixing">Mixing</option>
+								<option value="scratching">Scratching</option>
+								<option value="production">Production</option>
 							</select>
 						</div>
 						<div class="form__item form__item--submit">
@@ -217,168 +219,327 @@
 			  	<div class="course__option">
 			  		<div class="course__time">5 недель (10 занятий по 2 часа)</div>
 			  		<div class="course__dificult">начальный и средний уровень</div>
-			  		<div class="course__describe">
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какие знания и навыки получишь</div>
-				  			<div class="course__text">
-				  				<p>Оплата и гарантииСамый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
-				  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Оплата и гарантии</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__teachers teachers">
-			  			<div class="course__subtitle">Преподаватели</div>
-			  			<div class="row">
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
-			  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Галина Малиновская</div>
-			  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__btn"><a href="" data-select="mixing" class="btn course__btn">ЗАПИСАТЬСЯ на курс</a></div>
 			  	</div>
+		  		<div class="course__describe">
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какие знания и навыки получишь</div>
+			  			<div class="course__text">
+			  				<p>Самый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
+			  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Оплата и гарантии</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__teachers teachers">
+		  			<div class="course__subtitle">Преподаватели</div>
+		  			<div class="row">
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
+		  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Галина Малиновская</div>
+		  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__btn"><a href="#form" data-select="mixing" class="btn scroll__link btn--course">ЗАПИСАТЬСЯ на курс</a></div>
 			  </div>
 			  <div id="scratching" class="tab-pane fade">
 			  	<h3 class="course__header"><span>Курс</span> scratching</h3>
 			  	<div class="course__option">
 			  		<div class="course__time">5 недель (10 занятий по 2 часа)</div>
 			  		<div class="course__dificult">начальный и средний уровень</div>
-			  		<div class="course__describe">
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какие знания и навыки получишь</div>
-				  			<div class="course__text">
-				  				<p>Оплата и гарантииСамый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
-				  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Оплата и гарантии</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__teachers teachers">
-			  			<div class="course__subtitle">Преподаватели</div>
-			  			<div class="row">
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
-			  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Галина Малиновская</div>
-			  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__btn"><a href="" data-select="mixing" class="btn course__btn">ЗАПИСАТЬСЯ на курс</a></div>
 			  	</div>
+		  		<div class="course__describe">
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какие знания и навыки получишь</div>
+			  			<div class="course__text">
+			  				<p>Оплата и гарантииСамый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
+			  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Оплата и гарантии</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__teachers teachers">
+		  			<div class="course__subtitle">Преподаватели</div>
+		  			<div class="row">
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
+		  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Галина Малиновская</div>
+		  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__btn"><a href="#form" data-select="scratching" class="btn scroll__link btn--course">ЗАПИСАТЬСЯ на курс</a></div>
 			  </div>
 			  <div id="production" class="tab-pane fade">
 			  	<h3 class="course__header"><span>Курс</span> production</h3>
 			  	<div class="course__option">
 			  		<div class="course__time">5 недель (10 занятий по 2 часа)</div>
 			  		<div class="course__dificult">начальный и средний уровень</div>
-			  		<div class="course__describe">
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Какие знания и навыки получишь</div>
-				  			<div class="course__text">
-				  				<p>Оплата и гарантииСамый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
-				  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
-				  			</div>
-			  			</div>
-			  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
-			  			<div class="course__box">
-				  			<div class="course__subtitle">Оплата и гарантии</div>
-				  			<div class="course__text">
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
-				  			</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__teachers teachers">
-			  			<div class="course__subtitle">Преподаватели</div>
-			  			<div class="row">
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
-			  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  				<div class="col-md-6 teachers__col">
-			  					<div class="teachers__wrapp">
-			  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
-			  						<div class="teachers__info">
-			  							<div class="teachers__name">Галина Малиновская</div>
-			  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  			</div>
-			  		</div>
-			  		<div class="course__btn"><a href="" data-select="mixing" class="btn course__btn">ЗАПИСАТЬСЯ на курс</a></div>
 			  	</div>
+		  		<div class="course__describe">
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какое обородудование и навыки нужны</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Какие знания и навыки получишь</div>
+			  			<div class="course__text">
+			  				<p>Оплата и гарантииСамый популярный курс, по окончанию которого ты научишься профессионально разбираться в диджей оборудовании, уметь миксовать треки и быть готовым к твоим первым выступлениям.</p>
+			  				<p>На протяжении курса используется топовое оборудование  фирмы Pioneer. <br>Также возможен миксинг на виниловых пластинках. </p>
+			  			</div>
+		  			</div>
+		  			<div class="course__box course__box--image"><img src="image/mixing-big.png" alt=""></div>
+		  			<div class="course__box">
+			  			<div class="course__subtitle">Оплата и гарантии</div>
+			  			<div class="course__text">
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  error sit voluptatem accusantiumuisquam est, qbore et dolore magnam aliquam quaerat voluptatem.</p>
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__teachers teachers">
+		  			<div class="course__subtitle">Преподаватели</div>
+		  			<div class="row">
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-1.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Dj Andrew (Андрей Чудля)</div>
+		  							<div class="teachers__text">Участник группы ТНМК, один из лучших скретч диджеев Украины, более 15 лет диджейской практики, гость многих клубов Украины и ближнего зарубежья. </div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="col-md-6 teachers__col">
+		  					<div class="teachers__wrapp">
+		  						<div class="teachers__col__avatar"><img src="image/teacher-2.png" alt=""></div>
+		  						<div class="teachers__info">
+		  							<div class="teachers__name">Галина Малиновская</div>
+		  							<div class="teachers__text">Резидент столичных поп и андеграундных заведений, частый гость онлайн эфиров на PLAY TV; приглашенный диджей лучших клубов ближнего зарубежья.</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="course__btn"><a href="#form" data-select="production" class="btn scroll__link btn--course">ЗАПИСАТЬСЯ на курс</a></div>
 			  </div>
 			</div>
 		</div>
 	</div>
+	<!-- course end -->
+	
+	<!-- review -->
+	<div class="review">
+		<div class="review__container">
+			<div class="container">
+				<div id="reviews"></div>
+				<h2 class="site__title">Отзывы учеников</h2>
+				<div class="review__slider">
+					<div class="review__column">
+						<div class="review__column__wrapp">
+							<div class="review__item">
+								<div class="review__info">
+									<div class="review__avatar">
+										<img src="image/review-1.png" alt="">
+									</div>
+									<div class="review__describe">
+										<div class="review__name">Lorem ipsum</div>
+										<div class="review__position">dolor aliquam qutatem.</div>
+									</div>
+								</div>
+								<div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliqusum dolor sit amet,</div>
+							</div>
+							<div class="review__item review__item--light">
+								<div class="review__info">
+									<div class="review__avatar">
+										<img src="image/review-2.png" alt="">
+									</div>
+									<div class="review__describe">
+										<div class="review__name">Lorem ipsum</div>
+										<div class="review__position">dolor aliquam qutatem.</div>
+									</div>
+								</div>
+								<div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmocidunt ut labore et dolore magnam aliquam qutatem.</div>
+							</div>
+						</div>
+					</div>
+					<div class="review__column">
+						<div class="review__column__wrapp">
+							<div class="review__item review__item--light">
+								<div class="review__info">
+									<div class="review__avatar">
+										<img src="image/review-3.png" alt="">
+									</div>
+									<div class="review__describe">
+										<div class="review__name">Lorem ipsum</div>
+										<div class="review__position">dolor aliquam qutatem.</div>
+									</div>
+								</div>
+								<div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam qutatem.</div>
+							</div>
+							<div class="review__item review__item--dark">
+								<div class="review__info">
+									<div class="review__avatar">
+										<img src="image/review-2.png" alt="">
+									</div>
+									<div class="review__describe">
+										<div class="review__name">Lorem ipsum</div>
+										<div class="review__position">dolor aliquam qutatem.</div>
+									</div>
+								</div>
+								<div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam qutatem.</div>
+							</div>
+						</div>
+					</div>
+					<div class="review__column">
+						<div class="review__column__wrapp">
+							<div class="review__item review__item--dark">
+								<div class="review__info">
+									<div class="review__avatar">
+										<img src="image/review-2.png" alt="">
+									</div>
+									<div class="review__describe">
+										<div class="review__name">Lorem ipsum</div>
+										<div class="review__position">dolor aliquam qutatem.</div>
+									</div>
+								</div>
+								<div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliqusum dolor sit amet, consectetur adipisicing. <br>Вsed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam qod tempo К incididunt ut labore et dolore mpora incidunt ut labore et dolore utatem.  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore magnam aliquam qod tempor incididunt ut labore et dolore mpora incidunt ut labore et dolore utatem.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- review end -->
 
+	<!-- get -->
+	<div class="get">
+		<div class="container">
+			<h2 class="site__title site__title--black">Что вы получаете</h2>
+			<div class="get__list">
+				<div class="get__item get__item--left">
+					<div class="get__title">Диплом об<br> успешном<br> прохождении<br> курса</div>
+				</div>
+				<div class="get__item get__item--right">
+					<div class="get__title">Скидки на оборудование</div>
+					<div class="get__text">Мы дружим со многими поставщиками и дистрибьюторами, так что сможем помочь с покупкой нужного оборудования</div>
+				</div>
+				<div class="get__item get__item--left">
+					<div class="get__title">Рекомендации и возможность трудоустройства</div>
+					<div class="get__text">К нам регулярно обращаются организаторы различных мероприятий (будь-то вечеринка, выставка или показ мод), поэтому мы с радостью порекомендуем наших талантливых выпускников. </div>
+				</div>
+				<div class="get__item get__item--right">
+					<div class="get__title">Знания и опыт от лучших диджеев мира</div>
+					<div class="get__text">Самое главное что вы получаете, это знания и навыки, которые обязательно вам пригодятся в начале вашего творческого пути.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- get end -->
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/granim.min.js"></script>
-<script src="js/main.js"></script>
+	<!-- contact -->
+	<div class="contact" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="column contact__col">
+					<div class="location">г. Киев <br>
+						ул Михаила Коцюбинского 9 <br>
+					(м. Университет)</div>
+					<div class="phone">+38 <span>067 908 69 13</span></div>
+					<div class="contact__form form">
+						<div class="form__title">Бесплатно пройти пробное занятие</div>
+						<form action="" method="POST" class="form__form">
+							<div class="form__item">
+								<input id="input-footer-1" type="text" placeholder="Ваше имя" class="form__item__input form__item__input--text">
+							</div>
+							<div class="form__item">
+								<input id="input-footer-2" type="text" placeholder="Ваш телефон" class="form__item__input form__item__input--text">
+							</div>
+							<div class="form__item form__item--select">
+								<select name="form-select" id="form-select-2" class="form__item__select">
+									<option value="" disabled selected>Выберите курс</option>
+									<option value="mixing">Mixing</option>
+									<option value="scratching">Scratching</option>
+									<option value="production">Production</option>
+								</select>
+							</div>
+							<div class="form__item form__item--submit">
+								<input type="submit" value="ЗАПИСАТЬСЯ" class="form__item__submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="map map__col">
+					<div id="map"><iframe src="https://snazzymaps.com/embed/44963" width="100%" height="800px" style="border:none;"></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<a href="#form" class="scroll__link"><img src="image/logo-footer.png" alt=""></a>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script><!-- grid -->
+<script src="js/granim.min.js"></script><!-- gradient effect -->
+<script src="js/slick.min.js"></script><!-- slider with review -->
+<script src="js/main.js"></script><!-- init functions -->
 </body>
 </html>

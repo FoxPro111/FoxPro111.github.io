@@ -1,3 +1,4 @@
+// top banner gradient
 var granimInstance = new Granim({
     element: '#canvas-basic',
     name: 'basic-gradient',
@@ -15,6 +16,7 @@ var granimInstance = new Granim({
     }
 });
 
+// scroll to element after click link
 $('a.scroll__link').on('click', function (e) {
   e.preventDefault();
   var href = $(this).attr('href');
@@ -23,18 +25,43 @@ $('a.scroll__link').on('click', function (e) {
   }, 'slow');
 });
 
-// $('.courses a').click(function (e) {
-//   e.preventDefault()
-//   $(this).tab('show');
-//   $('.courses a').removeClass('active');
-//   $(this).addClass('active');
-// })
-
+// tabs courses
 $('.courses a').on('click', function(event) {
     event.preventDefault();
     var href = $(this).attr('href');
-    // $('html, body').animate({scrollTop: $(href).offset().top - 50}, 'fast'); 
     $(this).tab('show');  
-  $('.courses a').removeClass('active');
-  $(this).addClass('active');  
+    $('.courses a').removeClass('active');
+    $(this).addClass('active');  
+    function scrolling() {
+      $('html, body').animate({scrollTop: $(href).offset().top - 49}, 400);
+    } 
+    setTimeout(scrolling, 200);
+});
+
+// review slider init
+$('.review__slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  swipe: false,
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      infinite: true,
+      swipe: true
+    }
+  }]
+})
+
+// select courses
+$('.btn--course').on('click', function(event) {
+  event.preventDefault();
+  var select = $(this).data('select');
+  $('#form-select-1').val(select);
+  $('#input-header-1').focus();
 });
