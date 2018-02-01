@@ -1682,3 +1682,8 @@ img {
         padding: 30px 0;
     }
 }
+
+.messages {
+    max-height: 20px;
+    margin-top: -20px;
+}

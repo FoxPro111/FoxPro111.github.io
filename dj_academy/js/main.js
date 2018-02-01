@@ -74,3 +74,51 @@ $('.nav__btn, .shadow, .nav__item a').on('click', function(event) {
     $('body').toggleClass('open');
   }
 });
+
+
+// check form and send mail
+$('#btn_submit').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  var user_name    = $('#input-header-1').val();
+  var user_phone   = $('#input-header-2').val();
+  var course_select = $('#form-select-1').val();
+    // отправляем данные
+  $.ajax({
+  url: "../action.php", // куда отправляем
+  type: "post", // метод передачи
+  dataType: "json", // тип передачи данных
+  data: { // что отправляем
+    "user_name":    user_name,
+    "user_phone":   user_phone,
+    "course_select": course_select
+  },
+  // после получения ответа сервера
+  success: function(data){
+      $('#messages-1').html(data.result); // выводим ответ сервера
+    }
+  });
+});
+
+$('#btn_submit--footer').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  var user_name    = $('#input-footer-1').val();
+  var user_phone   = $('#input-footer-2').val();
+  var course_select = $('#form-select-2').val();
+    // отправляем данные
+  $.ajax({
+  url: "../action.php", // куда отправляем
+  type: "post", // метод передачи
+  dataType: "json", // тип передачи данных
+  data: { // что отправляем
+    "user_name":    user_name,
+    "user_phone":   user_phone,
+    "course_select": course_select
+  },
+  // после получения ответа сервера
+  success: function(data){
+      $('#messages-2').html(data.result); // выводим ответ сервера
+    }
+  });
+});
