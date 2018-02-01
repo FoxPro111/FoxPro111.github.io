@@ -65,3 +65,12 @@ $('.btn--course').on('click', function(event) {
   $('#form-select-1').val(select);
   $('#input-header-1').focus();
 });
+
+// mobile navigation
+$('.nav__btn, .shadow, .nav__item a').on('click', function(event) {
+  event.preventDefault();
+  if ($(window).width() < 767) {
+    $('.nav__list').slideToggle(500);
+    $('body').toggleClass('open');
+  }
+});
