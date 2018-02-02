@@ -491,13 +491,13 @@ img {
 }
 
 .form__item--submit {
-    margin-top: 73px;
+    margin-top: 33px;
     margin-bottom: 0;
     text-align: right;
 }
 
 .banner__form {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -665,6 +665,11 @@ img {
         margin-top: 30px;
     }
 
+    .messages {
+        height: auto !important;
+        margin: 0 !important;
+    }
+
     .banner__picture__item img {
         top: 30px;
         width: 370px;
@@ -691,8 +696,8 @@ img {
     margin-top: -240px;
     position: relative;
     z-index: 10;
-    padding-bottom: 40px;
     padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .advantages__item {
@@ -758,13 +763,15 @@ img {
 /* about academy */
 
 .about {
-    padding: 40px 0 90px;
+    padding: 40px 0;
+    position: relative;
+    z-index: 7;
 }
 
 .about__content {
     font-size: 14px;
     line-height: 28px;
-    color: #5a0fcb;
+    color: #333;
 }
 
 /* course */
@@ -856,6 +863,7 @@ img {
     color: #9470fb;
     transition: .5s;
     margin-bottom: 25px;
+    height: 70px;
 }
 
 .courses__timing:after,
@@ -1138,7 +1146,7 @@ img {
     max-width: 680px;
     background: linear-gradient(to right, #850cc4, #900fd3);
     margin-left: -40px;
-    padding: 30px 15px 30px 40px;
+    padding: 20px 15px 20px 40px;
     color: #fff;
     font-weight: 600;
     font-size: 36px;
@@ -1146,11 +1154,23 @@ img {
     letter-spacing: .2em;
     text-transform: uppercase;
     margin-bottom: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
 }
 
 .course__header span {
-    font-size: 20px;
-    font-weight: 300;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.course__header span img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: -5px;
 }
 
 .tab-pane {
@@ -1229,7 +1249,11 @@ img {
 .course__box--image {
     position: absolute;
     right: -240px;
-    top: 30px;
+    top: 00px;
+}
+
+#production .course__box--image {
+    right: -140px;
 }
 
 .course__teachers {
@@ -1250,6 +1274,13 @@ img {
     max-width: 60px;
     margin-right: 20px;
     margin-top: 5px;
+    height: 60px;
+}
+
+.teachers__col__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .teachers__info {
@@ -1299,7 +1330,7 @@ img {
     }
 
     .course__box--image {
-        position: static;
+        position: static !important; 
         text-align: center;
     }
 
@@ -1329,10 +1360,6 @@ img {
     .course__subtitle {
         font-size: 18px;
         line-height: 24px;
-    }
-
-    .course__box--image {
-        margin-right: -15px;
     }
 
     .course__subtitle:before {
@@ -1511,24 +1538,44 @@ img {
 .get__title {
     font-size: 21px;
     font-weight: 600;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .get__item:before {
     position: absolute;
     left: 0;
-    top: 6px;
+    top: -2px;
     right: 0;
     margin: auto;
-    width: 54px;
-    height: 54px;
-    border: 15px solid #ebebeb;
+    width: 70px;
+    height: 70px;
+    border: 8px solid #fff;
+    background: #446fe6;
     display: block;
+    content: '';
+}
+
+.get__item:after {
+    background: repeating-linear-gradient(#363636 0px, #363636 4px, #fff 4px, #fff 8px);
+    height: 100%;
+    height: calc(100% - 68px);
+    width: 1px;
+    left: 0;
+    right: 0;
+    top: 68px;
+    margin: auto;
+    display: block;
+    position: absolute;
     content: '';
 }
 
 .get__item:last-child {
     margin-top: -70px;
+}
+
+.get__item:last-child:after {
+    background: #fff;
+    top: 60px;
 }
 
 @media (max-width: 768px) {
@@ -1544,6 +1591,7 @@ img {
 
     .get__item:before {
         right: auto;
+        left: -8px;
     }
 
     .get__item:last-child {
@@ -1552,7 +1600,12 @@ img {
     }
 
     .get__item {
-        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .get__item:after {
+        left: 27px;
+        right: auto;
     }
 }
 
@@ -1604,6 +1657,13 @@ img {
     color: #fff;
     background: url('../image/free-lesson.png') 0 5px no-repeat;
     margin-bottom: 25px;
+}
+
+.form__title--top {
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 35px;
+    background: url('../image/free-header.png') 0 50% no-repeat;
 }
 
 .contact__form {
@@ -1684,6 +1744,6 @@ img {
 }
 
 .messages {
-    max-height: 20px;
+    height: 20px;
     margin-top: -20px;
 }
