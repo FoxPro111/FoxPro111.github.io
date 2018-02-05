@@ -1,0 +1,162 @@
+.why {
+	&__col {
+		width: 20%;
+		float: left;
+		padding: 0 15px;
+	}
+
+  &__list {
+      margin-top: 80px;
+  }
+
+  &__item {
+  	border: 1px solid #ebebeb;
+  	padding: 25px 15px 30px;
+  	position: relative;
+  }
+
+  &__ico {
+		color: #503392;
+		font-size: 60px;
+		line-height: normal;
+		margin-bottom: 20px;
+	}
+
+	&__hidden {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: #503392;
+		visibility: hidden;	
+		opacity: 0;
+		transition: .5s;
+		width: 100%;
+		z-index: 3;
+		padding: 30px 15px 35px;
+		// min-height: calc(100% - 115px);
+
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__item {
+			padding: 0 7px;
+
+			a {
+				border: 1px solid $why-ico-border-color;
+				color: $why-ico-border-color;
+				font-size: 14px;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				transition: .5s;
+
+				&:hover {
+					color: $why-ico-color;
+					background: $why-ico-border-color;
+				}
+			}
+		}
+	}
+}
+
+.why__item:hover .why__hidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+.fa-heart:before {
+	content: ""; 
+}
+
+.fa-comment-alt:before {
+	content: ""; 
+}
+
+.fa-laptop:before {
+	content: "\f109"; 
+}
+
+.fa-star:before {
+	content: ""; 
+}
+
+.fa-flag:before {
+	content: ""; 
+}
+
+.fa-why-link:before {
+  content: ""; 
+}
+
+.fa-search-plus:before {
+  content: "\f00e"; 
+}
+
+@media (max-width: 1024px) {
+	.why {
+		&__list {
+			margin-top: 20px;
+		}
+
+		&__item {
+			padding: 15px;
+		}
+
+		&__col {
+			width: 50%;
+			margin-top: 30px;
+
+			&:nth-child(2n+1):last-child {
+				margin-left: 25%;
+			}
+		}
+
+		&__ico {
+			font-size: 40px;
+			margin-bottom: 15px;
+		}
+
+		&__hidden {
+			position: static;
+			opacity: 1;
+			visibility: visible;
+			background: none;
+			padding: 15px 0 0;
+
+			.section__title {
+				display: none;
+			}
+
+			&__item {
+				& a {
+					color: $why-ico-color;
+					background: $why-ico-border-color;
+					border-color: $why-ico-color;
+
+					&:hover {
+						color: $why-ico-border-color;
+						background: $why-ico-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.why {
+		&__col {
+			width: 100%;
+
+			&:nth-child(2n+1):last-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

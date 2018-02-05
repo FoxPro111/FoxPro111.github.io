@@ -1,0 +1,77 @@
+/*
+* font
+*/
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica.eot');
+    src: url('../font/Helvetica.eot?#iefix') format('embedded-opentype'),
+        url('../font/Helvetica.woff') format('woff'),
+        url('../font/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BEYNO';
+    src: url('../font/BEYNO.eot');
+    src: url('../font/BEYNO.eot?#iefix') format('embedded-opentype'),
+        url('../font/BEYNO.woff') format('woff'),
+        url('../font/BEYNO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Light.eot');
+    src: url('../font/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Light.woff') format('woff'),
+        url('../font/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Bold.eot');
+    src: url('../font/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Bold.woff') format('woff'),
+        url('../font/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Heavy.eot');
+    src: url('../font/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Heavy.woff') format('woff'),
+        url('../font/Lato-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.eot');
+    src: url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Regular.woff') format('woff'),
+        url('../font/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/FontAwesome.eot');
+    src: url('../font/FontAwesome.eot?#iefix') format('embedded-opentype'),
+        url('../font/FontAwesome.woff') format('woff'),
+        url('../font/FontAwesome.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    font-family: 'FontAwesome';
+}
