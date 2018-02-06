@@ -7,7 +7,7 @@ gulp.task('scss', function() { // Создаем таск "sass"
   return gulp.src(['scss/*.scss']) // Берем источник
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-scss
     .pipe(autoprefixer({
-        browsers: ['last 10 versions'],
+        browsers: ['last 222 versions'],
         cascade: false
     }))
     .pipe(gulp.dest('css')) // Выгружаем результата в папку css

@@ -6,12 +6,12 @@
 	}
 
   &__list {
-      margin-top: 80px;
+      margin-top: 85px;
   }
 
   &__item {
   	border: 1px solid #ebebeb;
-  	padding: 25px 15px 30px;
+  	padding: 29px 15px 30px;
   	position: relative;
   }
 
@@ -19,7 +19,7 @@
 		color: #503392;
 		font-size: 60px;
 		line-height: normal;
-		margin-bottom: 20px;
+		margin-bottom: 36px;
 	}
 
 	&__hidden {
@@ -32,8 +32,12 @@
 		transition: .5s;
 		width: 100%;
 		z-index: 3;
-		padding: 30px 15px 35px;
+		padding: 29px 15px 37px;
 		// min-height: calc(100% - 115px);
+
+		.section__title {
+			margin-bottom: 27px;
+		}
 
 		&__list {
 			display: flex;

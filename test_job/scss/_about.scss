@@ -1,13 +1,14 @@
 .about {
 	&__txt {
 		font-size: 14px;
-		line-height: 24px;
+		line-height: 25px;
 		color: #373737;
 		margin-top: 46px;
 	}
 
 	&__img {
-		margin-top: 40px;
+		margin-top: 72px;
+		margin-right: -18px;
 		text-align: right;
 
 		img {
@@ -22,7 +23,8 @@
 
 .skill {
 	&__list {
-		margin-top: 60px;
+		margin-top: 36px;
+		padding: 0 6px;
 	}
 
 	&__item {
@@ -35,6 +37,7 @@
 		font-size: 13px;
 		font-weight: bold;
 		letter-spacing: .05em;
+		margin-bottom: 15px;
 	}
 
 	&__line {
@@ -60,6 +63,7 @@
 		&--mobile {
 			display: block;
 			text-align: center;
+			margin: 0;
 
 			img {
 				max-width: 200px;
