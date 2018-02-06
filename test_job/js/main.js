@@ -135,4 +135,7 @@ $(".nav__item > a[href^='#']").click(function (){
   $('html, body').animate({
     scrollTop: $($(this).attr('href')).offset().top
   }, 1000);
+  $('.nav__btn').removeClass('active');
+  $('.mob').removeClass('active');
+  $('body').removeClass('open');
 });
